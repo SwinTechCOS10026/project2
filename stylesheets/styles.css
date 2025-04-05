@@ -1,3 +1,19 @@
+/*
+
+filename: styles.css
+
+author: Chea Roelink
+
+created: 30/03/2025
+
+last modified: 30/03/2025
+
+description: index - styles for homepage/head of every page
+
+*/
+*{
+    font-family: "Calibri", sans-serif;
+}
 /* #region ====================> header <==================== */
 
 .job-header {
@@ -199,4 +215,65 @@
   width: 500px;
   height: 20px;
   resize: none;
+}
+/*#region ====================> main <============ */
+#index-body{
+    padding: 0px;
+}
+#background-image{
+    float: right;
+    margin-top: -21px;
+    justify-content: center;
+    transform: translateX(0.6%);
+    mask-image: linear-gradient(to bottom, black calc(100% - 200px), transparent 100%);
+}
+.company-description-fieldset-left{
+    background-color: #eee6db;
+    border: 0px solid rgba(255, 255, 255, 1);
+    width: 800px;
+    height: 500px;
+    background-blend-mode: normal;
+    transform: translate(0%, -120%);
+    border-radius: 10px;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+.company-description-fieldset-right{
+    background-color: #eee6db;
+    border: 0px solid rgba(255, 255, 255, 1);
+    width: 420px;
+    height: 500px;
+    background-blend-mode: normal;
+    transform: translate(190%, -220%);
+    border-radius: 10px;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2.7s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		background-color: #eee6db00;
+        border-color: rgba(255, 255, 255, 0);
+        
+	}
+	100% {
+		background-color: #eee6db;
+        border-color: rgba(255, 255, 255, 1);
+	}
+}
+#company-description{
+    text-align: left;
+    display: inline-block;
+    position: absolute;
+    word-wrap: normal;
+    color: black;
+    grid-row: 1px;
+    background-color: #eee6db;
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2.7s;
 }
