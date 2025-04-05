@@ -8,8 +8,8 @@
     padding: 0rem 2rem;
     background-color: #eee6db;
     flex-wrap: wrap;
-    width: 96.9%;
-    transform: translate(-1%, -5%);
+    width: 96.8%;
+    transform: translate(-1%, -6%);
 }
 
 .job-logo img {
@@ -58,9 +58,9 @@
   color: black;
   text-align: center;
   box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
-  width: 1348px;
-  height: 355px;
-  transform: translate(-0.57%,5%);
+  width: 1350px;
+  height: 300px;
+  transform: translate(-0.6%, 18%);
   align-items: center;
   justify-content: space-evenly;
   border-top-left-radius: 15px;
@@ -73,6 +73,7 @@
   justify-content: start, end;
   clear: both;
   float: left;
+  transform: translateY(-350%);
 }
 #footer-privacy{
   font-size: 14px;
@@ -83,7 +84,8 @@
   text-decoration: none;
   transition: color 0.3s;
   margin-right: 40px;
-  margin-left: 30px;
+  margin-left: 30px;  
+  transform: translateY(-350%);
 }
 #footer-terms{
   font-size: 14px;
@@ -93,6 +95,7 @@
   text-decoration: none;
   text-align: center;
   margin: 0;
+  transform: translateY(-350%);
 }
 /* Lists and their items */
 #footer-ul-contacts{
@@ -138,17 +141,18 @@
   transition: color 0.3s;
 }
 #footer-ul-jump-tos li {
-  margin-top: 35px;
+  margin-top: 15px;
   padding: 5px;
   font-size: 16px;
 }
 #footer-ul-page-links li {
-  margin-top: 42.5px;
+  margin-top: 15px;
+  padding: 5px;
   font-size: 16px;
 }
 #footer-ul-contacts li {
   color: black;
-  margin-top: 35px;
+  margin-top: 15px;
   padding: 5px;
   font-size: 16px;
 }
