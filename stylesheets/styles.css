@@ -218,7 +218,7 @@ description: index - styles for homepage/head of every page
 }
 /*#region ====================> main <============ */
 #index-body{
-    padding: 0px;
+    background-color: white;
 }
 #background-image{
     float: right;
@@ -229,7 +229,7 @@ description: index - styles for homepage/head of every page
 }
 .company-description-fieldset-left{
     background-color: #eee6db;
-    border: 0px solid rgba(255, 255, 255, 1);
+    border: 0px solid #eee6db;
     width: 800px;
     height: 500px;
     background-blend-mode: normal;
@@ -242,7 +242,7 @@ description: index - styles for homepage/head of every page
 }
 .company-description-fieldset-right{
     background-color: #eee6db;
-    border: 0px solid rgba(255, 255, 255, 1);
+    border: 0px solid #eee6db;
     width: 420px;
     height: 500px;
     background-blend-mode: normal;
@@ -251,17 +251,19 @@ description: index - styles for homepage/head of every page
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 2.7s;
+	animation-duration: 3s;
 }
 @keyframes fadeInOpacity {
 	0% {
+        color: rgb(0, 0, 0, 0);
 		background-color: #eee6db00;
-        border-color: rgba(255, 255, 255, 0);
+        border-color: #eee6db00;
         
 	}
 	100% {
+        color: rgb(0, 0, 0, 1);
 		background-color: #eee6db;
-        border-color: rgba(255, 255, 255, 1);
+        border-color: #eee6db;
 	}
 }
 #company-description{
@@ -269,11 +271,19 @@ description: index - styles for homepage/head of every page
     display: inline-block;
     position: absolute;
     word-wrap: normal;
-    color: black;
+    color: rgb(0, 0, 0, 1);
     grid-row: 1px;
-    background-color: #eee6db;
-    animation-name: fadeInOpacity;
+    animation-name: fadeInOpacityText;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 2.7s;
+}
+@keyframes fadeInOpacityText {
+	0% {
+        color: rgb(0, 0, 0, 0);
+        
+	}
+	100% {
+        color: rgb(0, 0, 0, 1);
+	}
 }
