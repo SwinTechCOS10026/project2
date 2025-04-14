@@ -324,7 +324,7 @@ h3 {
   border: 0px solid #eee6db;
   float: left;
   width: 67.8%;
-  height: 60%;
+  height: 80%;
   background-blend-mode: normal;
   border-radius: 10px;
 	animation-name: fadeInOpacity;
@@ -389,7 +389,7 @@ h3 {
 	animation-duration: 2.7s;
 }
 #company-description-subheading-1{
-  transform: translate(10%, 300%);
+  transform: translate(10%, 700%);
   text-align: left, end;
   display: inline-block;
   position: absolute;
@@ -402,7 +402,7 @@ h3 {
 	animation-duration: 2.7s;
 }
 #company-description-subheading-2{
-  transform: translate(10%, 1100%);
+  transform: translate(10%, 1800%);
   text-align: left, end;
   display: inline-block;
   position: absolute;
@@ -451,10 +451,10 @@ h3 {
   margin-top: auto;
 }
 .mission-statement-fieldset{
-  margin-top: 3%;
+  margin-top: 1%;
   border: 0px solid #eee6db;
   width: 50%;
-  height: 25rem;
+  height: 46%;
   position: absolute;
   background-blend-mode: normal;
   border-radius: 10px;
@@ -465,7 +465,7 @@ h3 {
   float: left, top;
 }
 .mission-statement-text{
-  transform: translate(0%, 50%);
+  transform: translate(0%, 20%);
   text-align: left, end;
   display: inline-block;
   position: absolute;
@@ -502,7 +502,7 @@ h3 {
   margin-top: 5%;
 }
 .goal-statement-text{
-  transform: translate(0%, 50%);
+  transform: translate(0%, 30%);
   text-align: left, end;
   display: inline-block;
   position: absolute;
