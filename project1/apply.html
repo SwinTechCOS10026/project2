@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Introduction to basic HTML elements">
+    <meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Paragraph, Headings, Strong, Emphasis, form">
+    <meta name="author: " content="Chea Roelink">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+
+<body>
+    <header class="job-header" id="main-content">
+
+        <nav class="job-nav-bar">
+            <a href="index.html"><button class="job-nav-btn">Home</button></a>
+            <a href="jobs.html"><button class="job-nav-btn">Jobs</button></a>
+            <a href="apply.html"><button class="job-nav-btn">Apply</button></a>
+            <a href="about.html"><button class="job-nav-btn">About</button></a>
+        </nav>
+        <div class="job-logo">
+            <a href="index.html"><img src="/stylesheets/images/index_img/logo.png" alt="Company Logo"></a>
+        </div>
+    </header>
+
+    <div class="apply-wrapper">
+        <h2 class="apply-title">Job Application Form</h2>
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" class="apply-form">
+            <div class="apply-form-section">
+                <fieldset class="apply-fieldset">
+                    <legend class="apply-legend">Personal Details</legend>
+
+                    <div class="form-row">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,30}" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="lname">Family Name:</label>
+                        <input type="text" id="lname" name="lname" pattern="[A-Za-z]{1,30}" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="dob">Date of birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="phonenum">Phone Number:</label>
+                        <input type="tel" id="phonenum" name="phonenum" pattern="[0-9]{8,12}" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="pronouns">Pronouns:</label>
+                        <input type="text" id="pronouns" name="pronouns" pattern=".{2,20}" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="apply-fieldset">
+                    <legend class="apply-legend">Job Position</legend>
+
+                    <div class="form-row">
+                        <label for="posit">Desired Position:</label>
+                        <input type="text" id="posit" name="posit" pattern="[A-Za-z\s]{2,40}" required>
+                    </div>
+
+                    <div class="form-row checkbox-row">
+                        <label for="prevex">Do you have previous experience in this line of work?</label>
+                        <input type="checkbox" id="prevex" name="prevex">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="state">State of Residence:</label>
+                        <input type="text" id="state" name="state" pattern="[A-Za-z\s]{2,30}" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="postcode">Postcode:</label>
+                        <input type="text" id="postcode" name="postcode" pattern="[0-9]{4}" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="address">Home Address:</label>
+                        <input type="text" id="address" name="address" pattern=".{5,100}" required>
+                    </div>
+                </fieldset>
+            </div>
+
+            <fieldset class="apply-fieldset">
+                <legend class="apply-legend">Questions</legend>
+
+                <div class="form-row">
+                    <label for="q1">Why do you believe you deserve this position?</label>
+                    <input type="text" id="q1" name="q1" pattern=".{10,150}" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="q2">What kind of past experience do you believe makes you qualified for this
+                        position?</label>
+                    <input type="text" id="q2" name="q2" pattern=".{10,150}" required>
+                </div>
+            </fieldset>
+
+            <div class="form-row">
+                <button type="submit" class="btn-gold">Submit</button>
+            </div>
+        </form>
+    </div>
+    <aside class="jobs-contact-aside" aria-label="Contact Us Sidebar">
+
+        <input type="checkbox" id="jobs-contact-toggle" class="jobs-contact-toggle" hidden>
+
+        <label for="jobs-contact-toggle" class="jobs-contact-btn" aria-label="Open Contact Form">
+          <span class="jobs-contact-icon">💬</span>
+        </label>
+
+        <!-- contact panel -->
+        <div class="jobs-contact-panel">
+          <!-- close button -->
+          <label for="jobs-contact-toggle" class="jobs-contact-close" aria-label="Close Contact Form">×</label>
+
+          <h3 class="jobs-contact-title">Contact Us</h3>
+          <p class="jobs-contact-note">
+            We value every voice. Whether you have questions, feedback, or just want to say hi — this is the place.
+            Our team reads every message, and we’ll get back to you as soon as we can.
+          </p>
+          <form class="jobs-contact-form">
+            <label for="jobs-contact-name">Name</label>
+            <input type="text" id="jobs-contact-name" name="jobs-contact-name">
+
+            <label for="jobs-contact-phone">Phone</label>
+            <input type="email" id="jobs-contact-phone" name="jobs-contact-phone">
+
+            <label for="jobs-contact-email">Email</label>
+            <input type="email" id="jobs-contact-email" name="jobs-contact-email">
+
+            <label for="jobs-contact-message">Message</label>
+            <textarea id="jobs-contact-message" name="jobs-contact-message" rows="5"></textarea>
+
+            <button type="submit" class="btn-gold" id="jobs-contact-form-submit">Send Message</button>
+          </form>
+        </div>
+      </aside>
+    <!-- Footer -->
+    <footer id="footer">
+        <!-- lists and list items -->
+        <ul id="footer-ul-contacts">
+            <h3>Contacts:</h3>
+            <li>Email: <a id="footer-a-contacts" href="mailto:SwinTechGods@gmail.com">info@Swintech.com</a></li>
+            <li>Phone number: (61) 1234 1234</li>
+            <li>Fax: (61) 123 123 1234 </li>
+        </ul>
+        <ul id="footer-ul-jump-tos">
+            <h3>Jump To:</h3>
+            <li><a href="#index-body" id="footer-a-jump-tos">Top of page</a></li>
+            <li><a href="#master-fieldset-background" id="footer-a-jump-tos">middle</a></li>
+            <li><a href=".mission-statement-fieldset" id="footer-a-jump-tos">end of page</a></li>
+        </ul>
+        <ul id="footer-ul-page-links">
+            <h3>Pages:</h3>
+            <li><a href="index.html" id="footer-a-page-links">Home</a></li>
+            <li><a href="about.html" id="footer-a-page-links">About</a></li>
+            <li><a href="jobs.html" id="footer-a-page-links">Jobs</a></li>
+        </ul>
+        <!-- newsletter entry -->
+        <form method="post"></form>
+            <h3 id="newsletter-title">Newsletter:</h3>
+            <fieldset id="newsletter-fieldset">
+                <label for="newsletter">
+                    <strong>
+                        Want email updates? <br> Sign up for our weekly newsletter! <br>
+                    </strong>
+                </label> 
+                <textarea name= "newsletter" id="newsletter-textarea" placeholder="Enter your email" aria-label="newsletter"></textarea>
+                
+                <input type= "submit" value="Sign up">
+            </fieldset>
+        <!-- extra footer information -->
+        <p id="footer-copyright">Copyright Â© 2025 SwinTech - All Rights reserved</p>
+        <a target="_blank" href="extra-files-for-links/Placeholder Privacy Policy.pdf" id="footer-privacy">Privacy policy</a>
+        <a target="_blank" href="extra-files-for-links/Terms_and_Services_Agreement.pdf" id="footer-terms">Terms &amp; Services</a>
+    </footer>
+</body>
+
+</html>
