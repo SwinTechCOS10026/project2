@@ -1,9 +1,0 @@
-G05 - IT Support Technician
-
-About Page
-
-The page includes a title and information about the team, as mentioned in the assignment description. 
-This page includes a "Contribution" section listing information about who did what for this assignment. 
-The page maintains consistent design and navigation with the home page. 
-HTML is validated, with no broken links or incorrect hyperlinks. 
-The page is deployed on GitHub. Well-structured, efficient, and maintainable code.
