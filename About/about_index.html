@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding and make site responsive on all devices -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SwinTech</title>
+
+    <!-- Import Google Fonts for modern, clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Link to external CSS stylesheets for header/footer and about page -->
+    <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="about_styles.css">
+</head>
+<body>
+    <!-- Header section shared across pages (can include logo, site navigation, etc.) -->
+    <header class="job-header">
+        <!-- Navigation elements are managed in header_footer.css -->
+    </header>
+
+    <!-- Main content wrapper for the entire About Us page -->
+    <main class="about-us-container">
+
+        <!-- Welcome section with animated heading and site mission -->
+        <section class="about-us-intro">
+            <h1 class="about-us-title fade-in">About Us</h1>
+            <p class="about-us-subtitle slide-up">Welcome to SwinTech!</p>
+            <p class="about-us-subtext slide-up">We're a group of student-led Software Engineers, united in a mission to advance our users' careers.</p>
+        </section>
+
+        <!-- Group overview: name, schedule, IDs, and tutor -->
+        <section class="about-us-group-info">
+            <h2 class="about-us-section-title">Group Info</h2>
+            <!-- List of details about the group and its members -->
+            <ul class="about-us-list">
+                <li><strong>Group Name:</strong> SwinTech</li>
+                <li><strong>Class Time and Day:</strong>
+                    <ul class="about-us-sublist">
+                        <li>Monday, 2:30 - 4:30 PM</li>
+                    </ul>
+                </li>
+                <li><strong>Student IDs:</strong>
+                    <ul class="about-us-sublist">
+                        <li>Yaoxin - 105478372</li>
+                        <li>Nadid - 105751455</li>
+                        <li>Chea - 105478372</li>
+                        <li>Jack - 105913093</li>
+                    </ul>
+                </li>
+                <li><strong>Tutor's Name:</strong> Nick</li>
+            </ul>
+        </section>
+
+        <!-- Member responsibilities and contributions -->
+        <section class="about-us-contributions">
+            <h2 class="about-us-section-title">Project Contributions</h2>
+            <!-- Description list format for team member roles and work -->
+            <dl class="about-us-def-list">
+                <dt>Nadid</dt>
+                <dd>Team Leader – Engineered the About Us page and led team communication.</dd>
+                <dt>Chea</dt>
+                <dd>Designed and built the Homepage (Index).</dd>
+                <dt>Yaoxin</dt>
+                <dd>Created the Jobs page with interactive job listings.</dd>
+                <dt>Jack</dt>
+                <dd>Developed the Apply page including forms and validations.</dd>
+            </dl>
+        </section>
+
+        <!-- Group image with caption (replace placeholder image before publishing) -->
+        <section class="about-us-photo">
+            <h2 class="about-us-section-title">Our Group Photo</h2>
+            <figure class="about-us-figure">
+                <!-- NOTE: Replace this placeholder image with an actual team image before deployment -->
+                <img src="group-photo.jpg" alt="Group photo of SwinTech team" width="400">
+                <figcaption>Our awesome team at Swinburne campus (Replace this with a real image, under 300kb)</figcaption>
+            </figure>
+        </section>
+
+        <!-- Member interests in tabular format -->
+        <section class="about-us-table-section">
+            <h2 class="about-us-section-title">Group Members' Interests</h2>
+            <!-- Simple table layout to show hobbies and language preferences -->
+            <table class="about-us-interest-table" border="1">
+                <caption>Our Interests and Hobbies</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Hobby</th>
+                        <th>Favourite Language</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nadid</td>
+                        <td>Reading Sci-Fi</td>
+                        <td rowspan="2">Python</td>
+                    </tr>
+                    <tr>
+                        <td>Chea</td>
+                        <td>Video Editing</td>
+                    </tr>
+                    <tr>
+                        <td>Yaoxin</td>
+                        <td>Gaming</td>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td>Jack</td>
+                        <td colspan="2">Loves cycling and exploring frontend frameworks</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Group diversity, background, and personal favorites -->
+        <section class="about-us-profile">
+            <h2 class="about-us-section-title">Group Profile</h2>
+            <!-- Background info, coding experience, and fun facts about the team -->
+            <p>We come from diverse backgrounds – China, Cambodia, Australia – and bring a range of strengths to the team. Some of us are first-year students, others have part-time dev jobs.</p>
+            <p>Together, we speak 4 languages and share over 5 years of combined coding experience in HTML, CSS, JavaScript, Python, and Java.</p>
+
+            <!-- Highlight some of the team's shared favorite books, movies, and music -->
+            <h3 class="about-us-favorites-heading">Our Top 3 Favorite Things</h3>
+            <ul class="about-us-favorites">
+                <li>Books: <em>The Pragmatic Programmer, Atomic Habits</em></li>
+                <li>Movies: <em>Inception, The Social Network</em></li>
+                <li>Music: <em>Lo-fi, Indie Rock, K-Pop</em></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer section shared across pages -->
+    <footer class="job-footer">
+        <!-- Global footer content like copyright, links, etc. -->
+    </footer>
+</body>
+</html>
