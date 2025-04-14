@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Introduction to basic HTML elements">
+		<meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Paragraph, Headings, Strong, Emphasis, form">
+		<meta name="author: " content="Chea Roelink">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Job Application Form</title>
+        <link rel="stylesheet" href="/stylesheets/styles.css">
+    </head>
+    <body>
+        <header class="job-header" id="main-content">
+
+            <nav class="job-nav-bar">
+              <a href="index.html"><button class="job-nav-btn">Home</button></a>
+              <a href="jobs.html"><button class="job-nav-btn">Jobs</button></a>
+              <a href="apply.html"><button class="job-nav-btn">Apply</button></a>
+              <a href="about.html"><button class="job-nav-btn">About</button></a>
+            </nav>
+            <div class="job-logo">
+              <a href="index.html"><img src="/stylesheets/images/index_img/logo.png" alt="Company Logo"></a>
+            </div>
+        </header>
+        <h2>Job Applcation Form</h2>
+        <form action="submit.php" method="post">
+            <table>
+                <td>
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <label for="First Name">First Name:</label>
+                        <input type="text" id="fname" name="fname" required>
+                        <br>
+                        <label for="Family Name">Family Name:</label>
+                        <input type="text" id="lname" name="lname" required>
+                        <br>
+                        <label for="dob">Date of birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                        <br>
+                        <label: for="phonenum">Phone Number:</label>
+                        <input type="number" id="phonenum" name="phonenum" required>
+                        <br>
+                        <label for="pronouns">Pronouns:</label>
+                        <input type="text" id="pronouns" name="pronouns" required>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Job Position</legend>
+                        <label for="position">Desired Position:</label>
+                        <input type="text" id="posit" name="posit" required>
+                        <br>
+                        <label for="prevex">Do you have previous experience in this line of work?</label>
+                        <input type="checkbox" id="prevex" name="prevex" required>
+                        <br>
+                        <label for="state">State of Residence:</label>
+                        <input type="text" id="state" name="state" required>
+                        <br>
+                        <label for="postcode">Postcode:</label>
+                        <input type="number" id="postcode" name="postcode" required>
+                        <br>
+                        <label for="address">Home Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </fieldset>
+                </td>
+            </table>
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="q1">Why do you believe you deserve this position? </label>
+                <input type="tex"t id="q1" name="q1" required>
+                <br>
+                <label for="q2">What kind of past experience do you believe makes you qualified for this position? </label>
+                <input type="text" id="q2" name="q2" required>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+         <!-- Footer -->
+         <footer id="footer">
+            <!-- lists and list items -->
+            <ul id="footer-ul-contacts">
+                <h3>Contacts:</h3>
+                <li>Email: <a id="footer-a-contacts" href="mailto:SwinTechGods@gmail.com">info@Swintech.com</a></li>
+                <li>Phone number: (61) 1234 1234</li>
+                <li>Fax: (61) 123 123 1234 </li>
+            </ul>
+            <ul id="footer-ul-jump-tos">
+                <h3>Jump To:</h3>
+                <li><a href="#index-body" id="footer-a-jump-tos">Top of page</a></li>
+                <li><a href="#master-fieldset-background" id="footer-a-jump-tos">middle</a></li>
+                <li><a href=".mission-statement-fieldset" id="footer-a-jump-tos">end of page</a></li>
+            </ul>
+            <ul id="footer-ul-page-links">
+                <h3>Pages:</h3>
+                <li><a href="index.html" id="footer-a-page-links">Home</a></li>
+                <li><a href="about.html" id="footer-a-page-links">About</a></li>
+                <li><a href="jobs.html" id="footer-a-page-links">Jobs</a></li>
+            </ul>
+            <!-- newsletter entry -->
+            <form method="post"></form>
+                <h3 id="newsletter-title">Newsletter:</h3>
+                <fieldset id="newsletter-fieldset">
+                    <label for="newsletter">
+                        <strong>
+                            Want email updates? <br> Sign up for our weekly newsletter! <br>
+                        </strong>
+                    </label> 
+                    <textarea name= "newsletter" id="newsletter-textarea" placeholder="Enter your email"> </textarea>
+                    <input type= "submit" value="Sign up">
+                </fieldset>
+            <!-- extra footer information -->
+            <p id="footer-copyright">Copyright © 2025 SwinTech - All Rights reserved</p>
+            <a target="_blank" href="extra-files-for-links/Placeholder Privacy Policy.pdf" id="footer-privacy">Privacy policy</a>
+            <a target="_blank" href="extra-files-for-links/Terms_and_Services_Agreement.pdf" id="footer-terms">Terms &amp; Services</a>
+        </footer>
+    </body>
+</html>
