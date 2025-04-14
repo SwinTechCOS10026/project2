@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Jobs</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&amp;family=Onest:wght@100..900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="styles/jobs.css" rel="stylesheet" />
+</head>
+
+<body id="jobs-page">
+  <!---------------------------------------- header ---------------------------------------->
+  <header class="job-header" id="main-content">
+    <nav class="job-nav-bar">
+      <a href="index.html"><button class="job-nav-btn">Home</button></a>
+      <a href="jobs.html"><button class="job-nav-btn">Jobs</button></a>
+      <a href="apply.html"><button class="job-nav-btn">Apply</button></a>
+      <a href="about.html"><button class="job-nav-btn">About</button></a>
+    </nav>
+    <div class="job-logo">
+      <img alt="Company Logo" src="images/logo.png" />
+    </div>
+  </header>
+  <!---------------------------------------- main body  ---------------------------------------->
+  <div class="job-main-content" id="main-contents">
+    <!--------------------------- working experience --------------------------->
+    <section class="job-working-experience">
+      <!-- Hidden Radio Buttons -->
+      <input checked="" hidden="" id="exp-1" name="experience-toggle" type="radio" />
+      <input hidden="" id="exp-2" name="experience-toggle" type="radio" />
+      <input hidden="" id="exp-3" name="experience-toggle" type="radio" />
+      <!-- Item Wrapper -->
+      <div class="job-working-experience-items">
+        <!-- Item 1 -->
+        <div class="job-working-experience-item item-1">
+          <div class="job-working-experience-img">
+            <img alt="Experience 1" src="styles/images/jobs_img/working_experience_1_C.jpg" />
+            <div class="job-experience-selector" role="group" aria-label="Select Experience">
+              <label for="exp-1" aria-label="Experience 1"></label>
+              <label for="exp-2" aria-label="Experience 2"></label>
+              <label for="exp-3" aria-label="Experience 3"></label>
+            </div>
+          </div>
+          <div class="job-working-experience-text">
+            <p class="job-working-experience-description">
+              "Swintech values independence and precision—two qualities I cherish. I've discovered clarity
+              here: in elegant code, in focused silence, and in the rare team that respects space and gets
+              the job done without fanfare. It's not loud, but it works."
+            </p><br />
+            <p class="job-working-experience-author">Din Djarin - Data Analyst, Swintec</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="job-working-experience-item item-2">
+          <div class="job-working-experience-img">
+            <img alt="Experience 2" src="styles/images/jobs_img/working_experience_3_C.jpg" />
+            <div class="job-experience-selector">
+              <label for="exp-1"></label>
+              <label for="exp-2"></label>
+              <label for="exp-3"></label>
+            </div>
+          </div>
+          <div class="job-working-experience-text">
+            <p class="job-working-experience-description">
+              "What I most admire at Swintech is the way structure and empathy co-exist. Working on complex
+              projects is rarely straightforward, but here I have found a culture where clarity is not
+              sacrificed to speed, and integrity is not confused with fragility."
+            </p><br />
+            <p class="job-working-experience-author">Satine Kryze - Project Management, Swintech</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="job-working-experience-item item-3">
+          <div class="job-working-experience-img">
+            <img alt="Experience 3" src="styles/images/jobs_img/working_experience_2_C.jpg" />
+            <div class="job-experience-selector">
+              <label for="exp-1"></label>
+              <label for="exp-2"></label>
+              <label for="exp-3"></label>
+            </div>
+          </div>
+          <div class="job-working-experience-text">
+            <p class="job-working-experience-description">
+              "Mesa no expect tech world to be so kind. But Swintech. mesa feel supported, trained, even
+              trusted. Not all days easy, but mesa grow a lot here, and now mesa assist others too."
+            </p><br />
+            <p class="job-working-experience-author">Jar Jar Binks - Systems Operations, Swintech</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="job-page-container">
+      <!------ filter  ------>
+      <div class="job-filter">
+        <select id="filter-area" name="area">
+          <option value="">Position</option>
+          <option value="pm">Project Management</option>
+          <option value="dev">Development</option>
+          <option value="data">Data Specialist</option>
+          <option value="op">Systems Administration</option>
+        </select>
+        <button class="job-filter-btn">Closing Soon</button>
+        <button class="job-filter-btn">New Released</button>
+        <button class="job-filter-btn">Remote Only</button>
+        <button class="job-filter-btn">Reset</button>
+        <button class="job-filter-apply">Apply</button>
+      </div>
+      <!------ job container ------>
+      <div class="job-jobs-container" id="jobs-container">
+        <section class="job-card dev" data-area="dev" data-days-left="23" data-release="2025-05-07" data-remote="true">
+          <!-- checkbox pop-up -->
+          <input class="job-toggle" hidden="" id="job1" type="checkbox" />
+          <!-- Summary card -->
+          <label class="job-summary" for="job1">
+            <h3 class="job-title">Software Developer</h3>
+            <p class="job-release">
+              <span>Remote Opportunities: Yes</span>
+              <!-- <span class="job-length job-new">Close in 23 days</span> -->
+            </p>
+            <p class="job-brief">
+              Collaborate with cross-functional teams to design, build and deliver technology-driven
+              solutions that drive operational efficiency and customer satisfaction across Australia’s digital economy.
+            </p>
+            <div class="job-summary-arrow">&gt;</div>
+          </label>
+          <!-- fake overlay -->
+          <label class="job-overlay"></label>
+          <!-- pop up details -->
+          <div class="job-details">
+            <h4 class="job-section-title">Role - Senior Engineer</h4>
+            <p>Release Date: 7 May 2025</p>
+            <p>Salary Range: $95,000 – $125,000 (depending on experience)</p>
+            <p class="job-working-model">Working Model：3 days remote / 2 days in-office hybrid</p>
+            <h4 class="job-section-title">How will I help?</h4>
+            <p>
+              You’ll join Swintech’s Banking Platform team as a Senior Engineer, delivering secure, scalable and
+              innovative lending solutions.
+              Your role centres around system analysis, high-level solution design, and leading delivery efforts for
+              loan origination and digital banking features.
+            </p>
+            <h4 class="job-section-title">Key responsibilities</h4>
+            <ul>
+              <li>Lead design and implementation for Oracle Banking Platform integrations (REST APIs, Microservices).
+              </li>
+              <li>Guide developers through engineering standards, code reviews, and solution validation.</li>
+              <li>Troubleshoot production issues using tools like Splunk and AppDynamics.</li>
+              <li>Align system designs with enterprise architecture and risk/security standards.</li>
+              <li>Contribute to documentation: system flows, design specs, and deployment guides.</li>
+            </ul>
+            <h4 class="job-section-title">What’s in it for me?</h4>
+            <p>
+              You’ll be part of a 200-year-old organisation that continues to innovate.
+              This role offers internal mobility, access to career development resources, and a hybrid work model.
+              Enjoy generous parental leave, flexible schedules, and a workplace that respects life beyond work.
+            </p>
+            <h4 class="job-section-title">What do I need?</h4>
+            <ol>
+              <li>We’re looking for strong experience in enterprise banking systems, ideally Oracle OBP or similar
+                platforms.</li>
+              <li>Hands-on knowledge in Java, OSB, SOA, and REST APIs is expected.</li>
+              <li>Bonus for Jenkins, Bitbucket, Oracle
+                tuning.</li>
+            </ol>
+            <h4 class="job-section-title">What’s it like to work here?</h4>
+            <p>
+              We believe in people-first tech. At Swintech, engineers are empowered to shape systems that support
+              millions of Australians.
+              Expect a supportive environment where your ideas are valued and growth is part of the culture.
+            </p>
+            <h4 class="job-section-title">How do I apply?</h4>
+            <p>Click Apply Now to take the next step. If this sounds like your kind of challenge—we’d love to hear from
+              you.</p>
+            <a href="apply.html" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
+            <label class="back-btn btn-gold" for="job1" id="">Back</label>
+          </div>
+        </section>
+        <section class="job-card op" data-area="op" data-days-left="4" data-release="2025-04-18" data-remote="false">
+          <!-- checkbox pop-up -->
+          <input class="job-toggle" hidden="" id="job2" type="checkbox" />
+          <!-- Summary card -->
+          <label class="job-summary" for="job2">
+            <h3 class="job-title">System Administrator</h3>
+            <p class="job-release">
+              <span>Remote Opportunities: No</span>
+              <span class="job-length job-short" aria-hidden="true">Close in 4 days</span>
+            </p>
+            <p class="job-brief">
+              Ensure the smooth operation of IT systems, networks, and servers across multiple locations.
+              You will maintain infrastructure stability, apply security updates, and respond to incidents in a timely
+              manner.
+            </p>
+            <div class="job-summary-arrow">&gt;</div>
+          </label>
+          <!-- fake overlay -->
+          <label class="job-overlay"></label>
+          <!-- pop up details -->
+          <div class="job-details">
+            <h4 class="job-section-title">Role - System Administrator</h4>
+            <p>Release Date: 18 April 2025</p>
+            <p>Salary Range: $95,000 – $125,000 (depending on experience)</p>
+            <p class="job-working-model">Working Model：Onsite (5 days/week)</p>
+            <h4 class="job-section-title">How will I help?</h4>
+            <p>
+              You’ll be supporting Swintech’s core infrastructure by ensuring reliable performance and uptime across all
+              critical systems.
+              Your role includes server management, patching, user account control, and escalation support.
+            </p>
+            <h4 class="job-section-title">Key responsibilities</h4>
+            <ul>
+              <li>Monitor and maintain Linux/Windows-based servers and cloud instances.</li>
+              <li>Apply system updates and perform regular security audits.</li>
+              <li>Respond to IT incidents and user support requests with urgency.</li>
+              <li>Coordinate with security and network teams to ensure compliance.</li>
+              <li>Document technical procedures and maintain runbooks.</li>
+            </ul>
+            <h4 class="job-section-title">What’s in it for me?</h4>
+            <p>
+              Join a dependable team where operational excellence is valued.
+              This role offers on-the-job training, stable hours, and exposure to enterprise-grade systems.
+              You'll enjoy job security and the satisfaction of keeping tech systems running smoothly.
+            </p>
+            <h4 class="job-section-title">What do I need?</h4>
+            <ol>
+              <li>Solid experience in system administration, preferably with Windows Server and Linux.</li>
+              <li>Familiarity with Active Directory, PowerShell scripting, patching tools, and backup management is
+                expected.</li>
+            </ol>
+            <h4 class="job-section-title">What’s it like to work here?</h4>
+            <p>
+              Swintech values reliability and calm under pressure.
+              You’ll work in a supportive, structured environment where documentation, teamwork, and system uptime are
+              top priorities.
+            </p>
+            <h4 class="job-section-title">How do I apply?</h4>
+            <p>Click Apply Now to take the next step. If this sounds like your kind of challenge—we’d love to hear from
+              you.</p>
+            <a href="apply.html" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
+            <label class="back-btn btn-gold" for="job2">Back</label>
+          </div>
+        </section>
+        <section class="job-card data" data-area="data" data-days-left="52" data-release="2025-06-05"
+          data-remote="true">
+          <!-- checkbox pop-up -->
+          <input class="job-toggle" hidden="" id="job3" type="checkbox" />
+          <!-- Summary card -->
+          <label class="job-summary" for="job3">
+            <h3 class="job-title">Data Analyst</h3>
+            <p class="job-release">
+              <span>Remote Opportunities: Yes</span>
+              <span class="job-length job-new" aria-hidden="true">New Released</span>
+            </p>
+            <p class="job-brief">
+              Analyse operational and customer data to uncover insights that guide business decisions and optimise
+              performance.
+              This role involves working across departments to deliver actionable intelligence through reports and
+              dashboards.
+            </p>
+            <div class="job-summary-arrow">&gt;</div>
+          </label>
+          <!-- fake overlay -->
+          <label class="job-overlay"></label>
+          <!-- pop up details -->
+          <div class="job-details">
+            <h4 class="job-section-title">Role - Data Analyst</h4>
+            <p>Release Date: 5 June 2025</p>
+            <p>Salary Range: $95,000 – $125,000 (depending on experience)</p>
+            <p class="job-working-model">Working Model：Fully remote or hybrid options available</p>
+            <h4 class="job-section-title">How will I help?</h4>
+            <p>
+              You’ll be at the heart of Swintech’s data-driven initiatives, helping leaders make informed decisions
+              across sales,
+              marketing, and product teams. Your work will shape everything from campaign targeting to platform
+              optimisation.
+            </p>
+            <h4 class="job-section-title">Key responsibilities</h4>
+            <ul>
+              <li>Clean, transform and analyse large datasets from multiple sources.</li>
+              <li>Build dashboards using tools like Power BI or Tableau.</li>
+              <li>Present findings to stakeholders and support data storytelling.</li>
+              <li>Work closely with engineering to ensure data accuracy and integrity.</li>
+              <li>Contribute to data governance and documentation practices.</li>
+            </ul>
+            <h4 class="job-section-title">What’s in it for me?</h4>
+            <p>
+              A future-proof role with access to mentorship, cutting-edge tools, and the freedom to explore new ways of
+              working.
+              You’ll enjoy remote flexibility, growth pathways, and a strong support network across the organisation.
+            </p>
+            <h4 class="job-section-title">What do I need?</h4>
+            <ol>
+              <li>Proficiency in SQL and data visualisation tools is essential.</li>
+              <li>Experience with Python or R for statistical
+                analysis is a plus.</li>
+              <li>Strong communication skills and attention to detail are key in turning numbers into impact.</li>
+            </ol>
+            <h4 class="job-section-title">What’s it like to work here?</h4>
+            <p>
+              Swintech’s data team is curious, collaborative, and always improving.
+              We encourage experimentation, value clarity over complexity, and believe data should always serve real
+              people.
+            </p>
+            <h4 class="job-section-title">How do I apply?</h4>
+            <p>Click Apply Now to take the next step. If this sounds like your kind of challenge—we’d love to hear from
+              you.</p>
+            <a href="apply.html" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
+            <label class="back-btn btn-gold" for="job3">Back</label>
+          </div>
+        </section>
+        <section class="job-card pm" data-area="pm" data-days-left="23" data-release="2025-05-07" data-remote="false">
+          <!-- checkbox pop-up -->
+          <input class="job-toggle" hidden="" id="job4" type="checkbox" />
+          <!-- Summary card -->
+          <label class="job-summary" for="job4">
+            <h3 class="job-title">Project Manager</h3>
+            <p class="job-release">
+              <span>Remote Opportunities: No</span>
+              <!-- <span class="job-length job-normal">Close in 23 days</span> -->
+            </p>
+            <p class="job-brief">
+              Lead cross-functional teams to deliver high-impact projects on time and within scope. This role requires
+              exceptional coordination skills and the ability to manage shifting priorities while keeping stakeholders
+              informed.
+            </p>
+            <div class="job-summary-arrow">&gt;</div>
+          </label>
+          <!-- fake overlay -->
+          <label class="job-overlay"></label>
+          <!-- pop up details -->
+          <div class="job-details">
+            <h4 class="job-section-title">Role - Project Manager</h4>
+            <p>Release Date: 7 May 2025</p>
+            <p>Salary Range: $95,000 – $125,000 (depending on experience)</p>
+            <p class="job-working-model">Working Model：Onsite preferred, with limited flexibility</p>
+            <h4 class="job-section-title">How will I help?</h4>
+            <p>
+              You’ll be responsible for end-to-end project delivery across Swintech’s major tech initiatives.
+              From planning through execution and closure, you’ll keep things on track, communicate with stakeholders,
+              and help unblock teams.
+            </p>
+            <h4 class="job-section-title">Key responsibilities</h4>
+            <ul>
+              <li>Define project scope, timelines, and deliverables in alignment with business objectives.</li>
+              <li>Facilitate Agile ceremonies and promote continuous improvement across squads.</li>
+              <li>Proactively identify risks and implement mitigation strategies.</li>
+              <li>Work closely with engineering, product, and compliance teams to ensure timely delivery.</li>
+              <li>Report on project health to leadership and manage stakeholder expectations.</li>
+            </ul>
+            <h4 class="job-section-title">What’s in it for me?</h4>
+            <p>
+              Swintech offers a collaborative environment where project managers are empowered to lead.
+              You’ll have the support of senior leadership, access to delivery frameworks, and pathways to grow into
+              portfolio-level roles.
+            </p>
+            <h4 class="job-section-title">What do I need?</h4>
+            <ol>
+              <li>Proven experience managing large-scale tech projects using Agile or hybrid methodologies.</li>
+              <li>Strong communication, stakeholder engagement, and conflict resolution skills are essential.</li>
+              <li>PMP or Scrum
+                certification is a plus.</li>
+            </ol>
+            <h4 class="job-section-title">What’s it like to work here?</h4>
+            <p>
+              Swintech thrives on structure without bureaucracy. You’ll join a team that respects process,
+              values psychological safety, and believes project success depends on both results and relationships.
+            </p>
+            <h4 class="job-section-title">How do I apply?</h4>
+            <p>Click Apply Now to take the next step. If this sounds like your kind of challenge—we’d love to hear from
+              you.</p>
+            <a href="apply.html" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
+            <label class="back-btn btn-gold" for="job4">Back</label>
+          </div>
+        </section>
+        <section class="job-card data" data-area="data" data-days-left="7" data-release="2025-04-21" data-remote="true">
+          <!-- checkbox pop-up -->
+          <input class="job-toggle" hidden="" id="job5" type="checkbox" />
+          <!-- Summary card -->
+          <label class="job-summary" for="job5">
+            <h3 class="job-title">Data Engineer</h3>
+            <p class="job-release">
+              <span>Remote Opportunities: Yes</span>
+              <span class="job-length job-short" aria-hidden="true">Close in 7 days</span>
+            </p>
+            <p class="job-brief">
+              Architect and optimise data pipelines that support real-time analytics and operational insights.
+              This role drives data reliability, scalability, and strategic business outcomes across Swintech's
+              platforms.
+            </p>
+            <div class="job-summary-arrow">&gt;</div>
+          </label>
+          <!-- fake overlay -->
+          <label class="job-overlay"></label>
+          <!-- pop up details -->
+          <div class="job-details">
+            <h4 class="job-section-title">Role - Data Engineer</h4>
+            <p>Release Date: 21 April 2025</p>
+            <p>Salary Range: $95,000 – $125,000 (depending on experience)</p>
+            <p class="job-working-model">Working Model：2–3 days remote with flexible arrangements</p>
+            <h4 class="job-section-title">How will I help?</h4>
+            <p>
+              You’ll develop and maintain robust ETL pipelines and real-time data platforms to empower analytics and
+              machine learning initiatives.
+              You’ll work with large datasets, build data lakes and warehouses, and ensure secure, efficient data flows
+              across the organisation.
+            </p>
+            <h4 class="job-section-title">Key responsibilities</h4>
+            <ul>
+              <li>Design, develop, and deploy scalable data infrastructure using tools like Spark, Airflow, and AWS.
+              </li>
+              <li>Build and optimise data models to support reporting, AI, and product decision-making.</li>
+              <li>Collaborate with data scientists, engineers, and analysts to deliver unified pipelines.</li>
+              <li>Ensure data integrity, security, and compliance with internal policies.</li>
+              <li>Continuously monitor and tune pipeline performance under high-volume conditions.</li>
+            </ul>
+            <h4 class="job-section-title">What’s in it for me?</h4>
+            <p>
+              Swintech’s data function is growing rapidly, offering you exposure to modern tools and cloud-native
+              architecture.
+              You'll get career growth support, mentorship from senior engineers, and the autonomy to innovate.
+            </p>
+            <h4 class="job-section-title">What do I need?</h4>
+            <ol>
+              <li>Experience with big data frameworks (e.</li>
+              <li>Spark, Flink), cloud data platforms (AWS/GCP), and data pipeline
+                tools (Airflow, Kafka).</li>
+              <li>Solid SQL skills and experience working in structured data environments are essential.</li>
+            </ol>
+            <h4 class="job-section-title">What’s it like to work here?</h4>
+            <p>
+              Data is at the core of every decision at Swintech. We value curiosity, clean architecture, and clear
+              thinking.
+              Engineers here are encouraged to question, to measure, and to push the boundaries of what's possible with
+              data.
+            </p>
+            <h4 class="job-section-title">How do I apply?</h4>
+            <p>Click Apply Now to take the next step. We’re eager to connect with data builders who thrive in dynamic,
+              high-impact environments.</p>
+            <a href="apply.html" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
+            <label class="back-btn btn-gold" for="job5">Back</label>
+          </div>
+
+        </section>
+        <section class="job-card dev" data-area="dev" data-days-left="48" data-release="2025-06-01" data-remote="true">
+          <!-- checkbox pop-up -->
+          <input class="job-toggle" hidden="" id="job6" type="checkbox" />
+          <!-- Summary card -->
+          <label class="job-summary" for="job6">
+            <h3 class="job-title">Frontend Developer</h3>
+            <p class="job-release">
+              <span>Remote Opportunities: Yes</span>
+              <span class="job-length job-new" aria-hidden="true">New Released</span>
+            </p>
+            <p class="job-brief">
+              Design and deliver modern, responsive, and accessible user interfaces that power real-time business
+              applications.
+              This role bridges visual creativity with technical excellence in Australia’s fast-growing digital sector.
+            </p>
+            <div class="job-summary-arrow">&gt;</div>
+          </label>
+          <!-- fake overlay -->
+          <label class="job-overlay"></label>
+          <!-- pop up details -->
+          <div class="job-details">
+            <h4 class="job-section-title">Role - Frontend Developer</h4>
+            <p>Release Date: 1 June 2025</p>
+            <p>Salary Range: $95,000 – $125,000 (depending on experience)</p>
+            <p class="job-working-model">Working Model：3 days remote / 2 days in-office hybrid</p>
+            <h4 class="job-section-title">How will I help?</h4>
+            <p>
+              You’ll build fast, scalable, and accessible user interfaces that shape how users interact with Swintech’s
+              platforms.
+              Working closely with UX/UI designers and backend engineers, your frontend architecture decisions will
+              directly impact usability, speed, and performance.
+            </p>
+            <h4 class="job-section-title">Key responsibilities</h4>
+            <ul>
+              <li>Develop responsive interfaces with HTML, CSS, JavaScript, and modern frameworks like React or Vue.
+              </li>
+              <li>Collaborate with designers to bring wireframes to life with pixel-perfect fidelity.</li>
+              <li>Implement web accessibility and performance best practices.</li>
+              <li>Integrate with RESTful APIs and handle real-time data updates.</li>
+              <li>Maintain code quality through modular architecture and component reuse.</li>
+            </ul>
+            <h4 class="job-section-title">What’s in it for me?</h4>
+            <p>
+              Join a creative engineering culture that values thoughtful design, clean code, and user-first development.
+              Enjoy a flexible hybrid work model, mentorship, and opportunities to work on public-facing applications
+              used by thousands.
+            </p>
+            <h4 class="job-section-title">What do I need?</h4>
+            <ol>
+              <li>Solid experience in frontend development with JavaScript/TypeScript, familiarity with build tools
+                (Webpack, Vite),
+                and experience working in agile teams.</li>
+              <li>Bonus for knowledge of testing libraries like Jest or Cypress.</li>
+            </ol>
+            <h4 class="job-section-title">What’s it like to work here?</h4>
+            <p>
+              At Swintech, we care as much about how things look and feel as how they function.
+              You’ll join a collaborative team that values empathy, innovation, and the craft of interface development.
+            </p>
+            <h4 class="job-section-title">How do I apply?</h4>
+            <p>Click Apply Now to get started. We’d love to see your portfolio and hear how you approach frontend
+              challenges.</p>
+            <a href="apply.html" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
+            <label class="back-btn btn-gold" for="job6">Back</label>
+          </div>
+        </section>
+
+        <!-- Job descriptions Statement
+         All job descriptions on this page were created exclusively for the COS10026 Web Technology assignment using OpenAI’s ChatGPT under authorised use. They are entirely fictional and intended solely for educational demonstration purposes. - -->
+      </div>
+
+      <!------ aside link discard ------>
+      <!-- <div class="job-help-btn-container">
+
+
+        <section class="job-help-btn-wrapper">
+          <div aria-label="We Are Here For You" class="job-help-btn">
+            <div class="circle-icon">
+              <span class="circle-text">We Are Here<br />For You</span>
+            </div>
+          </div>
+          <div class="job-help-btn-panel">
+            <div class="job-help-btn-panel-grid">
+              <a class="btn-support-link" href="https://www.indigenous.gov.au/" rel="noopener noreferrer"
+                target="_blank">
+                <img alt="We support First Nations people" src="styles/images/jobs_img/fn.png"
+                  title="We support First Nations people" />
+              </a>
+              <a class="btn-support-link" href="https://wit.org.au/" rel="noopener noreferrer" target="_blank">
+                <img alt="We support women in tech" src="styles/images/jobs_img/wit.png"
+                  title="We support women in tech" />
+              </a>
+              <a class="btn-support-link" href="https://www.disabilitygateway.gov.au/" rel="noopener noreferrer"
+                target="_blank">
+                <img alt="We support disability
+              inclusion" src="styles/images/jobs_img/dis.png" title="We support disability inclusion" />
+              </a>
+              <a class="btn-support-link" href="https://www.youth.gov.au/" rel="noopener noreferrer" target="_blank">
+                <img alt="We support young Australians" src="styles/images/jobs_img/yt.png"
+                  title="We support young Australians" />
+              </a>
+              <a class="btn-support-link"
+                href="https://aifs.gov.au/resources/resource-sheets/key-organisations-working-culturally-and-linguistically-diverse-families"
+                rel="noopener noreferrer" target="_blank">
+                <img alt="We support multicultural voices" src="styles/images/jobs_img/mv.png"
+                  title="We support multicultural voices" />
+              </a>
+              <a class="btn-support-link" href="https://www.medicarementalhealth.gov.au/" rel="noopener noreferrer"
+                target="_blank">
+                <img alt="We support mental wellbeing for all" src="styles/images/jobs_img/wa.png"
+                  title="We support mental wellbeing for all" />
+              </a>
+            </div>
+          </div>
+        </section>
+        <div class="job-help-btn-blur"></div>
+      </div> -->
+
+
+      <!------ job-more-link ------>
+      <div class="job-more-link">
+        <a href=""><button class="btn-gold">Explore More Opportunities In Swintech</button></a>
+      </div>
+
+      <!------ help button discard------>
+      <!-- <div class="job-help-btn" aria-label="We Are Here For You">
+        <a href="#help" class="help-floating-btn">
+          <div class="circle-icon">
+            <span class="circle-text">We Are Here<br>For You</span>
+          </div>
+        </a>
+      </div> -->
+      
+      <!--- feedback aside --->
+      <aside class="jobs-contact-aside" aria-label="Contact Us Sidebar">
+       
+        <input type="checkbox" id="jobs-contact-toggle" class="jobs-contact-toggle" hidden>
+      
+        <label for="jobs-contact-toggle" class="jobs-contact-btn" aria-label="Open Contact Form">
+          <span class="jobs-contact-icon">💬</span>
+        </label>
+      
+        <!-- contact panel -->
+        <div class="jobs-contact-panel">
+          <!-- close button -->
+          <label for="jobs-contact-toggle" class="jobs-contact-close" aria-label="Close Contact Form">×</label>
+      
+          <h3 class="jobs-contact-title">Contact Us</h3>
+          <p class="jobs-contact-note">
+            We value every voice. Whether you have questions, feedback, or just want to say hi — this is the place.
+            Our team reads every message, and we’ll get back to you as soon as we can.
+          </p>
+          <form class="jobs-contact-form">
+            <label for="jobs-contact-name">Name</label>
+            <input type="text" id="jobs-contact-name" name="jobs-contact-name" >
+            
+            <label for="jobs-contact-phone">Phone</label>
+            <input type="email" id="jobs-contact-phone" name="jobs-contact-phone" >
+
+            <label for="jobs-contact-email">Email</label>
+            <input type="email" id="jobs-contact-email" name="jobs-contact-email" >
+      
+            <label for="jobs-contact-message">Message</label>
+            <textarea id="jobs-contact-message" name="jobs-contact-message" rows="5" ></textarea>
+      
+            <button type="submit" class="btn-gold" id="jobs-contact-form-submit">Send Message</button>
+          </form>
+        </div>
+      </aside>
+
+      <!------ help section ------>
+      <div class="job-help" id="help">
+        <div class="job-help-slogan">
+          <h3>Our commitment to diversity and inclusion</h3>
+          We’re committed to creating a workforce where everyone feels safe, supported and able to progress in their
+          careers. We recognise that diversity in our workforce strengthens our work in the community.
+        </div>
+        <a class="support-link" href="https://www.indigenous.gov.au/" rel="noopener noreferrer" target="_blank">
+          <img alt="We support First Nations people" src="styles/images/jobs_img/fn.png"
+            title="We support First Nations people" />
+        </a>
+        <a class="support-link" href="https://wit.org.au/" rel="noopener noreferrer" target="_blank">
+          <img alt="We support women in tech" src="styles/images/jobs_img/wit.png" title="We support women in tech" />
+        </a>
+        <a class="support-link" href="https://www.disabilitygateway.gov.au/" rel="noopener noreferrer" target="_blank">
+          <img alt="We support disability
+          inclusion" src="styles/images/jobs_img/dis.png" title="We support disability inclusion" />
+        </a>
+        <a class="support-link" href="https://www.youth.gov.au/" rel="noopener noreferrer" target="_blank">
+          <img alt="We support young Australians" src="styles/images/jobs_img/yt.png"
+            title="We support young Australians" />
+        </a>
+        <a class="support-link"
+          href="https://aifs.gov.au/resources/resource-sheets/key-organisations-working-culturally-and-linguistically-diverse-families"
+          rel="noopener noreferrer" target="_blank">
+          <img alt="We support multicultural voices" src="styles/images/jobs_img/mv.png"
+            title="We support multicultural voices" />
+        </a>
+        <a class="support-link" href="https://www.medicarementalhealth.gov.au/" rel="noopener noreferrer"
+          target="_blank">
+          <img alt="We support mental wellbeing for all" src="styles/images/jobs_img/wa.png"
+            title="We support mental wellbeing for all" />
+        </a>
+        <!-- Image License Statement
+        These illustrations were generated by OpenAI's DALL·E through authorised use, and are free to use under the terms of
+        OpenAI’s content usage policy. The user holds full rights to use, adapt, and display them without attribution. -->
+        <!-- back to top button -->
+        <div class="job-back-to-top">
+          <a class="job-back-btn btn-gold" href="#main-content">Back to top</a>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------------- footer ---------------------------------------->
+    <footer class="job-footer">
+      <div>
+        This is footer is Provided by Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magnam qui
+        molestias dolore minima a molestiae! Placeat cum molestiae nesciunt quis, temporibus iste, velitdolores rem
+        magni possimus aperiam officia? Eius veritatis quisquam provident commodi tempore, laudantium cupiditate
+        necessitatibus iure, adipisci et reiciendis eaque blanditiis eum voluptates vel itaque quo maiores nostrum,
+        incidunt dicta velit. Repellendus officiis aliquam corporis molestiae. Nihil soluta consequuntur quia rem
+        sapiente earum unde odio, delectus quisquam. Inventore quisquam, non repellendus dolor odit iure nihil placeat
+        facilis beatae doloribus hic sapiente necessitatibus voluptatibus saepe porro voluptatem. Delectus excepturi
+        culpa laborum quo vel. Dolore quaerat veritatis, autem eligendi ex adipisci? Cumque voluptates excepturi rem
+        maiores corrupti, minus tempora aspernatur sint, fugit voluptatum esse earum dolore labore amet.Debitis
+        laboriosam aliquid consequuntur ullam dicta accusantium nihil beatae rem repellat sint aspernatur architecto
+        quasi, qui magni voluptatum vel voluptatibus voluptatem iure dolore esse necessitatibus repellendus aliquam
+        impedit pariatur. Dignissimos.
+      </div>
+    </footer>
+    <script>
+    </script>
+  </div>
+</body>
+
+</html>
