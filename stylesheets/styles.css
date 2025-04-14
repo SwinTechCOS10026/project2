@@ -70,7 +70,7 @@ h3 {
   padding: 0rem 2rem;
   background-color: #eee6db;
   flex-wrap: wrap;
-  width: 116.5em;
+  width: 80.7rem;
   transform: translate(-1%, -6%);
 }
 
@@ -120,8 +120,8 @@ h3 {
   color: black;
   text-align: center;
   box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
-  width: 120em;
-  height: 19em;
+  width: 84.26rem;
+  height: 19rem;
   transform: translate(-0.6%, 18%);
   align-items: center;
   justify-content: space-evenly;
@@ -136,7 +136,7 @@ h3 {
   clear: both;
   float: left;
   transform: translateY(-300%);
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 #footer-privacy{
   font-size: 1rem;
@@ -146,7 +146,7 @@ h3 {
   color: black;
   text-decoration: none;
   transition: color 0.3s;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   margin-left: 10px;  
   transform: translateY(-300%);
 }
@@ -166,7 +166,7 @@ h3 {
   list-style-type: none;
   text-align: center;
   float: left;
-  padding-left: 10rem;
+  padding-left: 5rem;
   font-size: 20px;
 }
 #footer-ul-page-links {
@@ -174,7 +174,7 @@ h3 {
   list-style-type: none;
   text-align: center;
   float: left;
-  padding-left: 15rem;
+  padding-left: 6rem;
   font-size: 20px;
 }
 #footer-a-page-links {
@@ -188,7 +188,7 @@ h3 {
   list-style-type: none;
   text-align: center;
   float: left;
-  padding-left: 15rem;
+  padding-left: 6rem;
   font-size: 20px;
 }
 #footer-a-jump-tos {
@@ -253,7 +253,7 @@ h3 {
 #newsletter-title{
   color: rgb(121, 94, 21);
   padding-top: 42.4px;
-  margin-left: 5rem;
+  margin-left: 1rem;
   font-size: 23px;
 }
 #newsletter-fieldset {
@@ -261,7 +261,7 @@ h3 {
   width: 500px;
   height: 125px;
   float: right;
-  margin-right: 11rem;
+  margin-right: 4.5rem;
   margin-bottom: 100px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -286,13 +286,13 @@ h3 {
   height: 40em;
   background-size: 150em 50em;
   transform: translate(-1%, -1.3%);
-  
   mask-image: linear-gradient(to bottom, black calc(100% - 5rem), transparent 100%);
 }
 #opening-heading{
   font-size: 8em;
   text-align: center;
-  color: #ebc38c;
+  color: #ffa527;
+  font-weight: bold;
   margin-top: 50px;
 }
 #opening-text{
@@ -301,7 +301,7 @@ h3 {
   word-wrap: normal;
   width: 35em;  
   position: absolute;
-  transform: translate(95%, -200%);
+  transform: translate(52%, -200%);
 }
 /* company description */
 #index-body{
@@ -309,21 +309,19 @@ h3 {
 }
 #master-fieldset-background{
   border: 0px solid #eee6db;
-  background-image: url('/stylesheets/images/index_img/programming.png');
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 5em;
   width: 99.57%;
   height: 800px;
   transform: translate(-1%, -1.3%);
-  mask-image: linear-gradient(to top, black calc(100% - 5rem), transparent 100%);
 }
 .company-description-fieldset-left{
   margin-top: 8%;
-  background-color: #eee6db;
+  background-color:  #eee6db41;
   border: 0px solid #eee6db;
   float: left;
-  width: 70rem;
+  width: 50rem;
   height: 500px;
   background-blend-mode: normal;
   border-radius: 10px;
@@ -334,10 +332,10 @@ h3 {
 }
 .company-description-fieldset-right{
   margin-top: 8%;
-  background-color: #eee6db;
+  background-color: #eee6db41;
   border: 0px solid #eee6db;
   float: right;
-  width: 40rem;
+  width: 25rem;
   height: 500px;
   background-blend-mode: normal;
   border-radius: 10px;
@@ -349,13 +347,13 @@ h3 {
 @keyframes fadeInOpacity {
 	0% {
         color: rgb(0, 0, 0, 0);
-		background-color: #eee6db00;
+		    background-color: #eee6db;
         border-color: #eee6db00;
         
 	}
 	100% {
         color: rgb(0, 0, 0, 1);
-		background-color: #eee6db;
+		    background-color:  #eee6db41;
         border-color: #eee6db;
 	}
 }
@@ -376,7 +374,7 @@ h3 {
   display: inline-block;
   position: absolute;
   word-wrap: normal;
-  width: 60rem;
+  width: 45rem;
   color: rgb(0, 0, 0, 1);
   animation-name: fadeInOpacityText;
 	animation-iteration-count: 1;
@@ -397,7 +395,7 @@ h3 {
 	animation-duration: 2.7s;
 }
 #company-description-subheading-2{
-  transform: translate(10%, 900%);
+  transform: translate(10%, 1100%);
   text-align: left, end;
   display: inline-block;
   position: absolute;
@@ -423,12 +421,12 @@ h3 {
 	animation-duration: 2.7s;
 }
 #company-description-text-right-subheadings{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 #text-wrap{
   word-wrap:break-word;
-  width: 22rem;
-  font-size: 1.5rem;
+  width: 15rem;
+  font-size: 1.2rem;
   padding: 1rem;
 } 
 @keyframes fadeInOpacityText {
@@ -444,22 +442,22 @@ h3 {
 .mission-statement-fieldset{
   margin-top: 3%;
   border: 0px solid #eee6db;
-  width: 70em;
-  height: 30rem;
+  width: 50em;
+  height: 25rem;
   position: absolute;
   background-blend-mode: normal;
   border-radius: 10px;
-  background-color: #eee6db;
+  background-color:  #eee6db41;
   mask-image: linear-gradient(to right, black calc(100% - 10rem), transparent 100%);
   float: left, top;
 }
 .mission-statement-text{
-  transform: translate(0%, 100%);
+  transform: translate(0%, 50%);
   text-align: left, end;
   display: inline-block;
   position: absolute;
   word-wrap: normal;
-  width: 50em;
+  width: 32em;
   color: rgb(0, 0, 0, 1);
   animation-name: fadeInOpacityText;
 	animation-iteration-count: 1;
@@ -467,31 +465,30 @@ h3 {
 	animation-duration: 2.7s;
 }
 #tech-help-img1{
-  width: 50em;
-  height: 31em;
+  width: 42rem;
+  height: 25.9rem;
   float: right;
   clear: both;
-  margin-top: 3.6em;
+  margin-top: 2.55em;
   mask-image: linear-gradient(to left, black calc(100% - 10rem), transparent 100%);
   
   margin-bottom: 3.6em;
 }
 .goal-statement-fieldset{
-  border: 0px solid #eee6db;
-  width: 70em;
+  border: 0px solid  #eee6db41;
+  width: 40em;
   height: 25rem;
   background-blend-mode: normal;
   border-radius: 10px;
-  background-color: #eee6db;
-  mask-image: linear-gradient(to right, black calc(100% - 10rem), transparent 100%);
+  background-color: #eee6db41;
 }
 .goal-statement-text{
-  transform: translate(0%, 100%);
+  transform: translate(0%, 50%);
   text-align: left, end;
   display: inline-block;
   position: absolute;
   word-wrap: normal;
-  width: 50em;
+  width: 32em;
   color: rgb(0, 0, 0, 1);
   animation-name: fadeInOpacityText;
 	animation-iteration-count: 1;
@@ -499,9 +496,13 @@ h3 {
 	animation-duration: 2.7s;
 }
 #tech-help-img2{
-  width: 40em;
-  height: 25em;
-  float: right, top;
+  width: 42rem;
+  height: 25.9rem;
+  float: right,top;
+  clear: both;
+  justify-content: right;
+  margin-bottom: -20rem;
+  transform: translate(96%, -100%);
   mask-image: linear-gradient(to left, black calc(100% - 10rem), transparent 100%);
 }
 /* #region ===========> contact-panel <============ */
