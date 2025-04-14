@@ -70,7 +70,7 @@ h3 {
   padding: 0rem 2rem;
   background-color: #eee6db;
   flex-wrap: wrap;
-  width: 80.7rem;
+  width: 98%;
   transform: translate(-1%, -6%);
 }
 
@@ -120,7 +120,7 @@ h3 {
   color: black;
   text-align: center;
   box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
-  width: 84.26rem;
+  width: 101%;
   height: 19rem;
   transform: translate(-0.6%, 18%);
   align-items: center;
@@ -166,7 +166,7 @@ h3 {
   list-style-type: none;
   text-align: center;
   float: left;
-  padding-left: 5rem;
+  padding-left: 10%;
   font-size: 20px;
 }
 #footer-ul-page-links {
@@ -174,7 +174,7 @@ h3 {
   list-style-type: none;
   text-align: center;
   float: left;
-  padding-left: 6rem;
+  padding-left: 10%;
   font-size: 20px;
 }
 #footer-a-page-links {
@@ -188,7 +188,7 @@ h3 {
   list-style-type: none;
   text-align: center;
   float: left;
-  padding-left: 6rem;
+  padding-left: 10%;
   font-size: 20px;
 }
 #footer-a-jump-tos {
@@ -253,15 +253,15 @@ h3 {
 #newsletter-title{
   color: rgb(121, 94, 21);
   padding-top: 42.4px;
-  margin-left: 1rem;
+  margin-left: 65%;
   font-size: 23px;
 }
 #newsletter-fieldset {
   border-color: black;
-  width: 500px;
+  width: 29%;
   height: 125px;
   float: right;
-  margin-right: 4.5rem;
+  margin-right: 3%;
   margin-bottom: 100px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -269,7 +269,7 @@ h3 {
   border-bottom-right-radius: 15px;
 }
 #newsletter-textarea {
-  width: 500px;
+  width: 100%;
   height: 20px;
   resize: none;
   margin-top: 1%;
@@ -329,6 +329,8 @@ h3 {
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 2s;
+  
+  margin-left: 15%;
 }
 .company-description-fieldset-right{
   margin-top: 8%;
@@ -343,6 +345,7 @@ h3 {
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 3s;
+  margin-right: 15%;
 }
 @keyframes fadeInOpacity {
 	0% {
@@ -442,13 +445,15 @@ h3 {
 .mission-statement-fieldset{
   margin-top: 3%;
   border: 0px solid #eee6db;
-  width: 50em;
+  width: 50%;
   height: 25rem;
   position: absolute;
   background-blend-mode: normal;
   border-radius: 10px;
   background-color:  #eee6db41;
   mask-image: linear-gradient(to right, black calc(100% - 10rem), transparent 100%);
+  margin-bottom: 50%;
+  margin-left: 14%;
   float: left, top;
 }
 .mission-statement-text{
@@ -466,13 +471,13 @@ h3 {
 }
 #tech-help-img1{
   width: 42rem;
-  height: 25.9rem;
-  float: right;
+  height: 25rem;
+  float: right, top;
   clear: both;
-  margin-top: 2.55em;
+  margin-top: 3%;
+  margin-left: 49%;
   mask-image: linear-gradient(to left, black calc(100% - 10rem), transparent 100%);
   
-  margin-bottom: 3.6em;
 }
 .goal-statement-fieldset{
   border: 0px solid  #eee6db41;
@@ -481,6 +486,7 @@ h3 {
   background-blend-mode: normal;
   border-radius: 10px;
   background-color: #eee6db41;
+  margin-left: 14%;
 }
 .goal-statement-text{
   transform: translate(0%, 50%);
@@ -502,6 +508,8 @@ h3 {
   clear: both;
   justify-content: right;
   margin-bottom: -20rem;
+  
+  margin-left: 15.1%;
   transform: translate(96%, -100%);
   mask-image: linear-gradient(to left, black calc(100% - 10rem), transparent 100%);
 }
