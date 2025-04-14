@@ -520,10 +520,6 @@ h3 {
   float: right,top;
   clear: both;
   justify-content: right;
-  margin-bottom: -20rem;
-  
-  margin-left: 15.1%;
-  transform: translate(96%, -100%);
   mask-image: linear-gradient(to left, black calc(100% - 10rem), transparent 100%);
 }
 /* #region ===========> contact-panel <============ */
