@@ -323,8 +323,8 @@ h3 {
   background-color:  #eee6db41;
   border: 0px solid #eee6db;
   float: left;
-  width: 50rem;
-  height: 31rem;
+  width: 67.8%;
+  height: 60%;
   background-blend-mode: normal;
   border-radius: 10px;
 	animation-name: fadeInOpacity;
@@ -381,7 +381,7 @@ h3 {
   display: inline-block;
   position: absolute;
   word-wrap: normal;
-  width: 45rem;
+  width: 70%;
   color: rgb(0, 0, 0, 1);
   animation-name: fadeInOpacityText;
 	animation-iteration-count: 1;
