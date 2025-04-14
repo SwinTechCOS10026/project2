@@ -301,7 +301,8 @@ h3 {
   word-wrap: normal;
   width: 35em;  
   position: absolute;
-  transform: translate(52%, -200%);
+  padding-left: 5%;
+  transform: translate(70%, -200%);
 }
 /* company description */
 #index-body{
@@ -331,6 +332,8 @@ h3 {
 	animation-duration: 2s;
   
   margin-left: 15%;
+  
+  margin-bottom: 15%;
 }
 .company-description-fieldset-right{
   margin-top: 8%;
@@ -346,6 +349,7 @@ h3 {
 	animation-timing-function: ease-in;
 	animation-duration: 3s;
   margin-right: 15%;
+  margin-bottom: 15%;
 }
 @keyframes fadeInOpacity {
 	0% {
@@ -468,6 +472,7 @@ h3 {
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 2.7s;
+  margin-top: 5%;
 }
 #tech-help-img1{
   width: 42rem;
@@ -487,6 +492,7 @@ h3 {
   border-radius: 10px;
   background-color: #eee6db41;
   margin-left: 14%;
+  margin-top: 5%;
 }
 .goal-statement-text{
   transform: translate(0%, 50%);
