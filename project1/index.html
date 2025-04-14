@@ -64,6 +64,10 @@
         </aside>
         <!-- main of body -->
         <main>
+            <fieldset id="opening-fieldset-background">
+                <h2 id="opening-heading">SwinTech</h2>
+                <h3 id="opening-text">Elevate your business with SwinTech's expert IT consulting. Our team of skilled professionals will provide tailored guidance and strategies to optimise your IT infrastructure, enhance efficiency, and drive innovation.</h3>
+            </fieldset>
             <fieldset id="master-fieldset-background">
                 <fieldset class="company-description-fieldset-left">
                     <h2 id="company-description-heading">
@@ -83,9 +87,9 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
                     </h2> 
                     <h3 id="company-description-text-right">
                         <dl>
-                            <dt>Consulting:</dt> 
+                            <dt id="company-description-text-right-subheadings">Consulting:</dt> 
                             <dd id="text-wrap"> We are available for technology, software, and network consultation 24/7</dd>
-                            <dt>Troubleshooting:</dt> 
+                            <dt id="company-description-text-right-subheadings">Troubleshooting:</dt> 
                             <dd id="text-wrap"> We are available for technology, software, and network troubleshooting 24/7</dd>
                         </dl>
                     </h3>     
@@ -99,6 +103,16 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
                 </h3>
             </fieldset>
+            <img src="/stylesheets/images/index_img/community-tech-help.jpg" alt="IT Consultant smiling" id="tech-help-img1">
+            <fieldset class="goal-statement-fieldset">
+                <h1 id="company-description-heading">
+                    Our Goal:  
+                </h1> 
+                <h3 class="goal-statement-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                </h3>
+            </fieldset>
+            <img src="/stylesheets/images/index_img/community-tech-help-2.jpg" alt="IT Consultant smiling" id="tech-help-img2">
         </main>
         <!-- Footer -->
         <footer id="footer">
@@ -130,7 +144,8 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
                             Want email updates? <br> Sign up for our weekly newsletter! <br>
                         </strong>
                     </label> 
-                    <textarea name= "newsletter" id="newsletter-textarea" placeholder="Enter your email"> </textarea>
+                    <textarea name= "newsletter" id="newsletter-textarea" placeholder="Enter your email" aria-label="newsletter"></textarea>
+                    
                     <input type= "submit" value="Sign up">
                 </fieldset>
             <!-- extra footer information -->
