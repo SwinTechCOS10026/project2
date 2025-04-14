@@ -16,19 +16,26 @@
     <link rel="stylesheet" href="about_styles.css">
 </head>
 <body>
-    <!-- Header section shared across pages (can include logo, site navigation, etc.) -->
-    <header class="job-header">
-        <!-- Navigation elements are managed in header_footer.css -->
-    </header>
+    <header class="job-header" id="main-content">
 
+        <nav class="job-nav-bar">
+          <a href="index.html"><button class="job-nav-btn">Home</button></a>
+          <a href="jobs.html"><button class="job-nav-btn">Jobs</button></a>
+          <a href="apply.html"><button class="job-nav-btn">Apply</button></a>
+          <a href="about.html"><button class="job-nav-btn">About</button></a>
+        </nav>
+        <div class="job-logo">
+          <a href="index.html"><img src="/stylesheets/images/index_img/logo.png" alt="Company Logo"></a>
+        </div>
+    </header>
     <!-- Main content wrapper for the entire About Us page -->
     <main class="about-us-container">
-
+        
         <!-- Welcome section with animated heading and site mission -->
         <section class="about-us-intro">
             <h1 class="about-us-title fade-in">About Us</h1>
             <p class="about-us-subtitle slide-up">Welcome to SwinTech!</p>
-            <p class="about-us-subtext slide-up">We're a group of student-led Software Engineers, united in a mission to advance our users' careers.</p>
+            <p class="about-us-subtext slide-up">We're a group of student-led Software Engineers, united in a mission to advance our users careers.</p>
         </section>
 
         <!-- Group overview: name, schedule, IDs, and tutor -->
@@ -60,7 +67,7 @@
             <!-- Description list format for team member roles and work -->
             <dl class="about-us-def-list">
                 <dt>Nadid</dt>
-                <dd>Team Leader – Engineered the About Us page and led team communication.</dd>
+                <dd>Team Leader - Engineered the About Us page and led team communication.</dd>
                 <dt>Chea</dt>
                 <dd>Designed and built the Homepage (Index).</dd>
                 <dt>Yaoxin</dt>
@@ -75,14 +82,14 @@
             <h2 class="about-us-section-title">Our Group Photo</h2>
             <figure class="about-us-figure">
                 <!-- NOTE: Replace this placeholder image with an actual team image before deployment -->
-                <img src="group-photo.jpg" alt="Group photo of SwinTech team" width="400">
-                <figcaption>Our awesome team at Swinburne campus (Replace this with a real image, under 300kb)</figcaption>
+                <img src="/About/photo/swintech-group-photo.jpg" alt="Group photo of SwinTech team" width="400">
+                <figcaption>Our awesome team at Swinburne campus</figcaption>
             </figure>
         </section>
 
         <!-- Member interests in tabular format -->
         <section class="about-us-table-section">
-            <h2 class="about-us-section-title">Group Members' Interests</h2>
+            <h2 class="about-us-section-title">Group Members Interests</h2>
             <!-- Simple table layout to show hobbies and language preferences -->
             <table class="about-us-interest-table" border="1">
                 <caption>Our Interests and Hobbies</caption>
@@ -168,7 +175,7 @@
                     </div>
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front">Khmer</div>
+                            <div class="flip-card-front">Japanese</div>
                             <div class="flip-card-back">Spoken by Chea</div>
                         </div>
                     </div>
@@ -196,8 +203,44 @@
     </main>
 
     <!-- Footer section shared across pages -->
-    <footer class="job-footer">
-        <!-- Global footer content like copyright, links, etc. -->
+    
+    <footer id="footer">
+        <!-- lists and list items -->
+        <ul id="footer-ul-contacts">
+            <h3>Contacts:</h3>
+            <li>Email: <a id="footer-a-contacts" href="mailto:SwinTechGods@gmail.com">info@Swintech.com</a></li>
+            <li>Phone number: (61) 1234 1234</li>
+            <li>Fax: (61) 123 123 1234 </li>
+        </ul>
+        <ul id="footer-ul-jump-tos">
+            <h3>Jump To:</h3>
+            <li><a href="#index-body" id="footer-a-jump-tos">Top of page</a></li>
+            <li><a href="#master-fieldset-background" id="footer-a-jump-tos">middle</a></li>
+            <li><a href=".mission-statement-fieldset" id="footer-a-jump-tos">end of page</a></li>
+        </ul>
+        <ul id="footer-ul-page-links">
+            <h3>Pages:</h3>
+            <li><a href="index.html" id="footer-a-page-links">Home</a></li>
+            <li><a href="about.html" id="footer-a-page-links">About</a></li>
+            <li><a href="jobs.html" id="footer-a-page-links">Jobs</a></li>
+        </ul>
+        <!-- newsletter entry -->
+        <form method="post"></form>
+            <h3 id="newsletter-title">Newsletter:</h3>
+            <fieldset id="newsletter-fieldset">
+                <label for="newsletter">
+                    <strong>
+                        Want email updates? <br> Sign up for our weekly newsletter! <br>
+                    </strong>
+                </label> 
+                <textarea name= "newsletter" id="newsletter-textarea" placeholder="Enter your email" aria-label="newsletter"></textarea>
+                
+                <input type= "submit" value="Sign up">
+            </fieldset>
+        <!-- extra footer information -->
+        <p id="footer-copyright">Copyright © 2025 SwinTech - All Rights reserved</p>
+        <a target="_blank" href="extra-files-for-links/Placeholder Privacy Policy.pdf" id="footer-privacy">Privacy policy</a>
+        <a target="_blank" href="extra-files-for-links/Terms_and_Services_Agreement.pdf" id="footer-terms">Terms &amp; Services</a>
     </footer>
 </body>
 </html>
