@@ -22,57 +22,80 @@
               <a href="index.html"><img src="/stylesheets/images/index_img/logo.png" alt="Company Logo"></a>
             </div>
         </header>
-        <h2>Job Applcation Form</h2>
+        <h2>Job Application Form</h2>
         <form action="submit.php" method="post">
-            <table>
-                <td>
+            <fieldset>
                     <fieldset>
                         <legend>Personal Details</legend>
                         <label for="First Name">First Name:</label>
-                        <input type="text" id="fname" name="fname" required>
+                        <input type="text" id="fname" name="fname" max="20" required>
                         <br>
-                        <label for="Family Name">Family Name:</label>
-                        <input type="text" id="lname" name="lname" required>
+                        <label for="Last Name">Last Name:</label>
+                        <input type="text" id="lname" name="lname" max="20" required>
                         <br>
                         <label for="dob">Date of birth:</label>
                         <input type="date" id="dob" name="dob" required>
                         <br>
-                        <label: for="phonenum">Phone Number:</label>
-                        <input type="number" id="phonenum" name="phonenum" required>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
                         <br>
-                        <label for="pronouns">Pronouns:</label>
-                        <input type="text" id="pronouns" name="pronouns" required>
-                    </fieldset>
-                </td>
-                <td>
-                    <fieldset>
-                        <legend>Job Position</legend>
-                        <label for="position">Desired Position:</label>
-                        <input type="text" id="posit" name="posit" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
                         <br>
-                        <label for="prevex">Do you have previous experience in this line of work?</label>
-                        <input type="checkbox" id="prevex" name="prevex" required>
+                        <label: for="streetaddress">Street Address:</label>
+                        <input type="text" id="streetaddress" name="streetaddress" max="40" required>
                         <br>
-                        <label for="state">State of Residence:</label>
-                        <input type="text" id="state" name="state" required>
+                        <label: for="suberbtown">Suberb/Town:</label>
+                        <input type="text" id="suberbtown" name="suberbtown" max="40" required>
+                        <label for="state">State:</label>
+                        <select name="state" id="state" required>
+                            <option value="vic">VIC</option>
+                            <option value="tas">TAS</option>
+                            <option value="wa">WA</option>
+                            <option value="sa">SA</option>
+                            <option value="qld">QLD</option>
+                            <option value="nsw">NSW</option>
+                            <option value="act">ACT</option>
+                            <option value="nt">NT</option>
+                          </select>
                         <br>
                         <label for="postcode">Postcode:</label>
                         <input type="number" id="postcode" name="postcode" required>
                         <br>
-                        <label for="address">Home Address:</label>
-                        <input type="text" id="address" name="address" required>
+                        <fieldset>
+                            <legend>Gender</legend>
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="Male">Male</label><br>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label><br>
+                            <input type="radio" id="other" name="gender" value="Other">
+                            <label for="other">Other</label>
+                        </fieldset>
                     </fieldset>
-                </td>
-            </table>
-            <fieldset>
-                <legend>Questions</legend>
-                <label for="q1">Why do you believe you deserve this position? </label>
-                <input type="tex"t id="q1" name="q1" required>
-                <br>
-                <label for="q2">What kind of past experience do you believe makes you qualified for this position? </label>
-                <input type="text" id="q2" name="q2" required>
+                    <fieldset>
+                        <legend>Job</legend>
+                        <label for="jobref">Job Reference Numer:</label>
+                        <select name="jobref" id="jobref" required>
+                            <option value="00012">00012</option>
+                            <option value="00026">00026</option>
+                            <option value="00027">00027</option>
+                          </select>
+                        <br>
+                        <label for="techlist">Required Technical list:</label>
+                        <input type="checkbox" id="techlist" name="techlist" required>
+                        <br>
+                        <label for="relskills">Other Relevent Skills:</label>
+                        <br>
+                        <textarea id="relskills" name="relskills" rows="4" cols="50">
+                        </textarea>
+                        <br>
+                        <label for="otherskills">Other Non-Relevent Skills:</label>
+                        <br>
+                        <textarea id="otherskills" name="otherskills" rows="4" cols="50">
+                        </textarea>      
+                    </fieldset>
+                <input type="submit" value="Apply">
             </fieldset>
-            <input type="submit" value="Submit">
         </form>
          <!-- Footer -->
          <footer id="footer">
