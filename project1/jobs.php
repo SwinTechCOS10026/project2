@@ -18,10 +18,10 @@
   <!---------------------------------------- header ---------------------------------------->
   <header class="job-header" id="main-content">
     <nav class="job-nav-bar">
-      <a href="../index.html"><button class="job-nav-btn">Home</button></a>
-      <a href="../project1/jobs.html"><button class="job-nav-btn">Jobs</button></a>
-      <a href="../project1/apply.html"><button class="job-nav-btn">Apply</button></a>
-      <a href="../project1/about.html"><button class="job-nav-btn">About</button></a>
+      <a href="../index.php"><button class="job-nav-btn">Home</button></a>
+      <a href="../project1/jobs.php"><button class="job-nav-btn">Jobs</button></a>
+      <a href="../project1/apply.php"><button class="job-nav-btn">Apply</button></a>
+      <a href="../project1/about.php"><button class="job-nav-btn">About</button></a>
     </nav>
     <div class="job-logo">
       <img alt="Company Logo" src="../stylesheets/images/index_img/logo.png"/>
@@ -176,7 +176,7 @@
             <h4 class="job-section-title">How do I apply?</h4>
             <p>Click Apply Now to take the next step. If this sounds like your kind of challenge—we’d love to hear from
               you.</p>
-            <a href="apply.html" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
+            <a href="apply.php" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
             <label class="back-btn btn-gold" for="job1" id="">Back</label>
           </div>
         </section>
@@ -240,7 +240,7 @@
             <h4 class="job-section-title">How do I apply?</h4>
             <p>Click Apply Now to take the next step. If this sounds like your kind of challenge—we’d love to hear from
               you.</p>
-            <a href="apply.html" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
+            <a href="apply.php" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
             <label class="back-btn btn-gold" for="job2">Back</label>
           </div>
         </section>
@@ -308,7 +308,7 @@
             <h4 class="job-section-title">How do I apply?</h4>
             <p>Click Apply Now to take the next step. If this sounds like your kind of challenge—we’d love to hear from
               you.</p>
-            <a href="apply.html" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
+            <a href="apply.php" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
             <label class="back-btn btn-gold" for="job3">Back</label>
           </div>
         </section>
@@ -372,7 +372,7 @@
             <h4 class="job-section-title">How do I apply?</h4>
             <p>Click Apply Now to take the next step. If this sounds like your kind of challenge—we’d love to hear from
               you.</p>
-            <a href="apply.html" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
+            <a href="apply.php" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
             <label class="back-btn btn-gold" for="job4">Back</label>
           </div>
         </section>
@@ -440,7 +440,7 @@
             <h4 class="job-section-title">How do I apply?</h4>
             <p>Click Apply Now to take the next step. We’re eager to connect with data builders who thrive in dynamic,
               high-impact environments.</p>
-            <a href="apply.html" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
+            <a href="apply.php" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
             <label class="back-btn btn-gold" for="job5">Back</label>
           </div>
 
@@ -479,7 +479,7 @@
             </p>
             <h4 class="job-section-title">Key responsibilities</h4>
             <ul>
-              <li>Develop responsive interfaces with HTML, CSS, JavaScript, and modern frameworks like React or Vue.
+              <li>Develop responsive interfaces with php, CSS, JavaScript, and modern frameworks like React or Vue.
               </li>
               <li>Collaborate with designers to bring wireframes to life with pixel-perfect fidelity.</li>
               <li>Implement web accessibility and performance best practices.</li>
@@ -507,7 +507,7 @@
             <h4 class="job-section-title">How do I apply?</h4>
             <p>Click Apply Now to get started. We’d love to see your portfolio and hear how you approach frontend
               challenges.</p>
-            <a href="apply.html" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
+            <a href="apply.php" target="_blank"><button class="apply-now btn-gold">Apply Now</button></a>
             <label class="back-btn btn-gold" for="job6">Back</label>
           </div>
         </section>
@@ -674,9 +674,9 @@
       </ul>
         <ul id="footer-ul-page-links">
             <h3>Pages:</h3>
-            <li><a href="../index.html" id="footer-a-page-links">Home</a></li>
-            <li><a href="../project1/about.html" id="footer-a-page-links">About</a></li>
-            <li><a href="../project1/jobs.html" id="footer-a-page-links">Jobs</a></li>
+            <li><a href="../index.php" id="footer-a-page-links">Home</a></li>
+            <li><a href="../project1/about.php" id="footer-a-page-links">About</a></li>
+            <li><a href="../project1/jobs.php" id="footer-a-page-links">Jobs</a></li>
         </ul>
       <!-- newsletter entry -->
       <form method="post"></form>

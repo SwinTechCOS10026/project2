@@ -18,13 +18,13 @@
     <header class="job-header" id="main-content">
 
         <nav class="job-nav-bar">
-            <a href="../index.html"><button class="job-nav-btn">Home</button></a>
-            <a href="../project1/jobs.html"><button class="job-nav-btn">Jobs</button></a>
-            <a href="../project1/apply.html"><button class="job-nav-btn">Apply</button></a>
-            <a href="../project1/about.html"><button class="job-nav-btn">About</button></a>
+            <a href="../index.php"><button class="job-nav-btn">Home</button></a>
+            <a href="../project1/jobs.php"><button class="job-nav-btn">Jobs</button></a>
+            <a href="../project1/apply.php"><button class="job-nav-btn">Apply</button></a>
+            <a href="../project1/about.php"><button class="job-nav-btn">About</button></a>
         </nav>
         <div class="job-logo">
-          <a href="index.html"><img src="../stylesheets/images/index_img/logo.png" alt="Company Logo"></a>
+          <a href="index.php"><img src="../stylesheets/images/index_img/logo.png" alt="Company Logo"></a>
         </div>
     </header>
     <!-- Main content wrapper for the entire About Us page -->
@@ -184,7 +184,7 @@
             <!-- Coding Experience Chart -->
             <div class="experience-bars">
                 <h3 class="about-us-favorites-heading">🧠 Coding Experience</h3>
-                <div class="exp-bar"><span>HTML</span><div class="bar bar-html"></div></div>
+                <div class="exp-bar"><span>php</span><div class="bar bar-php"></div></div>
                 <div class="exp-bar"><span>CSS</span><div class="bar bar-css"></div></div>
                 <div class="exp-bar"><span>JavaScript</span><div class="bar bar-js"></div></div>
                 <div class="exp-bar"><span>Python</span><div class="bar bar-python"></div></div>
@@ -219,9 +219,9 @@
         </ul>
         <ul id="footer-ul-page-links">
             <h3>Pages:</h3>
-            <li><a href="../index.html" id="footer-a-page-links">Home</a></li>
-            <li><a href="../project1/about.html" id="footer-a-page-links">About</a></li>
-            <li><a href="../project1/jobs.html" id="footer-a-page-links">Jobs</a></li>
+            <li><a href="../index.php" id="footer-a-page-links">Home</a></li>
+            <li><a href="../project1/about.php" id="footer-a-page-links">About</a></li>
+            <li><a href="../project1/jobs.php" id="footer-a-page-links">Jobs</a></li>
         </ul>
         <!-- newsletter entry -->
         <form method="post"></form>
