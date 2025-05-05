@@ -8,7 +8,7 @@
     <meta name="author: " content="Jack Milan Krbaleski">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
-    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../project1/stylesheets/styles.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
             <a href="../project1/about.php"><button class="job-nav-btn">About</button></a>
         </nav>
         <div class="job-logo">
-            <a href="index.php"><img src="../stylesheets/images/index_img/logo.png" alt="Company Logo"></a>
+            <a href="index.php"><img src="../project1/stylesheets/images/index_img/logo.png" alt="Company Logo"></a>
         </div>
     </header>
 

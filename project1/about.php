@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Onest:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Link to external CSS stylesheets for header/footer and about page -->
-    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../project1/stylesheets/styles.css">
 </head>
 <body>
     <header class="job-header" id="main-content">
@@ -24,7 +24,7 @@
             <a href="../project1/about.php"><button class="job-nav-btn">About</button></a>
         </nav>
         <div class="job-logo">
-          <a href="index.php"><img src="../stylesheets/images/index_img/logo.png" alt="Company Logo"></a>
+          <a href="index.php"><img src="../project1/stylesheets/images/index_img/logo.png" alt="Company Logo"></a>
         </div>
     </header>
     <!-- Main content wrapper for the entire About Us page -->
@@ -81,7 +81,7 @@
             <h2 class="about-us-section-title">Our Group Photo</h2>
             <figure class="about-us-figure">
                 <!-- NOTE: Replace this placeholder image with an actual team image before deployment -->
-                <img src="../stylesheets/images/about_img/swintech-group-photo.jpg" alt="Group photo of SwinTech team" width="400">
+                <img src="../project1/stylesheets/images/about_img/swintech-group-photo.jpg" alt="Group photo of SwinTech team" width="400">
                 <figcaption>Our awesome team at Swinburne campus</figcaption>
             </figure>
         </section>
@@ -131,15 +131,15 @@
                 <p>🌍 Our team comes from:</p>
                 <div class="flag-container">
                     <div class="flag-box">
-                        <img src="../stylesheets/images/about_flags/au.png" alt="Australia Flag">
+                        <img src="../project1/stylesheets/images/about_flags/au.png" alt="Australia Flag">
                         <span>Australia</span>
                     </div>
                     <div class="flag-box">
-                        <img src="../stylesheets/images/about_flags/uae.png" alt="UAE Flag">
+                        <img src="../project1/stylesheets/images/about_flags/uae.png" alt="UAE Flag">
                         <span>UAE</span>
                     </div>
                     <div class="flag-box">
-                        <img src="../stylesheets/images/about_flags/china.png" alt="China Flag">
+                        <img src="../project1/stylesheets/images/about_flags/china.png" alt="China Flag">
                         <span>China</span>
                     </div>
                 </div>

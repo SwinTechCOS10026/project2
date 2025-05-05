@@ -8,7 +8,7 @@
 		<meta name="author: " content="Chea Roelink">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Home</title>
-        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="project1/stylesheets/styles.css">
     </head>
 
     <!-- body -->
@@ -23,7 +23,7 @@
               <a href="project1/about.php"><button class="job-nav-btn">About</button></a>
             </nav>
             <div class="job-logo">
-              <a href="index.php"><img src="https://swintechcos10026.github.io/SwinTech-GroupProject/stylesheets/images/index_img/logo.png" alt="Company Logo"></a>
+              <a href="index.php"><img src="https://swintechcos10026.github.io/SwinTech-GroupProject/project1/stylesheets/images/index_img/logo.png" alt="Company Logo"></a>
             </div>
         </header>
               <!--- feedback aside --->
