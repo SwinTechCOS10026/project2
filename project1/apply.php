@@ -34,12 +34,12 @@
 
                     <div class="form-row">
                         <label for="fname">First Name:</label>
-                        <input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,20}" required>
+                        <input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,20}" placeholder="John" required>
                     </div>
 
                     <div class="form-row">
                         <label for="lname">Family Name:</label>
-                        <input type="text" id="lname" name="lname" pattern="[A-Za-z]{1,20}" required>
+                        <input type="text" id="lname" name="lname" pattern="[A-Za-z]{1,20}" placeholder="Doe"required>
                     </div>
 
                     <div class="form-row">
@@ -49,11 +49,11 @@
 
                     <div class="form-row">
                         <label for="phonenum">Phone Number:</label>
-                        <input type="tel" id="phonenum" name="phonenum" pattern="[0-9]{8,12}" required>
+                        <input type="tel" id="phonenum" name="phonenum" pattern="[0-9]{8,12}" placeholder="123412341234" required>
                     </div>
                     <div class="form-row">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
                     </div>
 
                     <div class="form-row">
@@ -97,17 +97,17 @@
                     
                     <div class="form-row">
                         <label for="postcode">Postcode:</label>
-                        <input type="number" id="postcode" name="postcode" min="200" max="9924" required>
+                        <input type="number" id="postcode" name="postcode" min="200" max="9924" placeholder = "1234" required>
                     </div>
 
                     <div class="form-row">
                         <label: for="streetaddress">Street Address:</label>
-                        <input type="text" id="streetaddress" name="streetaddress" max="40" required>
+                        <input type="text" id="streetaddress" name="streetaddress" max="40" placeholder="48 path st" required>
                     </div>
 
                     <div class="form-row">
                         <label for="address">Home Address:</label>
-                        <input type="text" id="address" name="address" pattern=".{5,100}" required>
+                        <input type="text" id="address" name="address" pattern=".{5,100}" placeholder="Unit 4 48 path st"  required>
                     </div>
                 </fieldset>
             </div>
@@ -117,20 +117,18 @@
 
                 <div class="form-row">
                     <label for="q1">Why do you believe you deserve this position?</label>
-                    <textarea id="q1" name="q1" rows="4" cols="50">
-                    </textarea>
+                    <textarea id="q1" name="q1" rows="4" cols="50" placeholder="Your text here"></textarea>
                 </div>
 
                 <div class="form-row checkbox-row">
                     <label for="prevex">Do you have previous experience in this line of work?</label>
-                    <input type="checkbox" id="prevex" name="prevex">
+                    <input type="checkbox" id="prevex" name="prevex" plaecholder="Your text here">
                 </div>
 
                 <div class="form-row">
                     <label for="q2">What kind of past experience do you believe makes you qualified for this
                         position?</label>
-                        <textarea id="q2" name="q2" rows="4" cols="50">
-                        </textarea>
+                        <textarea id="q2" name="q2" rows="4" cols="50" placeholder="Your text here"></textarea>
                 </div>
                 <div class="form-row">
                     <fieldset>
@@ -144,8 +142,7 @@
                 <div class="form-row"></div>
                     <label for="relskills">Other Relevent Skills:</label>
                     <br>
-                    <textarea id="relskills" name="relskills" rows="4" cols="50">
-                    </textarea>
+                    <textarea id="relskills" name="relskills" rows="4" cols="50" placeholder="Your text here"></textarea>
                 </div>
             </fieldset>
 
