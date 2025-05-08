@@ -66,40 +66,44 @@
         <main>
             <fieldset id="opening-fieldset-background">
                 <h2 id="opening-heading">SwinTech</h2>
+                <br>
                 <h3 id="opening-text">Elevate your business with SwinTech's expert IT consulting. Our team of skilled professionals will provide tailored guidance and strategies to optimise your IT infrastructure, enhance efficiency, and drive innovation.</h3>
             </fieldset>
+            <br>
             <fieldset id="master-fieldset-background">
                 <fieldset class="company-description-fieldset-left">
                     <h2 id="company-description-heading">
                         Who we are:
                     </h2>
+                    <br><br>
                     <h3 id="company-description-subheading-1">Innovation</h3>
-                    <h3 id="company-description-subheading-2">Community</h3>
+                    <br><br>
                     <h4 id="company-description-text-left">
-                        At SwinTech, innovation is not just a goal — it’s our starting point. We’re a student-led team of aspiring software engineers who believe that progress stems from bold ideas, practical curiosity, and a refusal to settle for “good enough.” Every line of code we write, every system we design, is driven by a desire to explore what’s possible — not just what’s been done before.<br><br>
-
-Our projects blend creativity with real-world application. From cloud-native systems to responsive web platforms, we build not just to learn, but to solve. As the tech landscape evolves, so do we — learning new tools, adopting modern frameworks, and experimenting with emerging technologies like AI integration and microservice architecture. Innovation is not a department — it’s our culture.
-                        
-                        <br> <br> <br> <br> <br> <br>
-                        Behind every commit is a conversation, and behind every deployment is a team. At SwinTech, we believe that great software is built through collaboration, not isolation. We foster a supportive, respectful environment where ideas are challenged, voices are heard, and everyone contributes — whether you're writing your first CSS file or architecting a scalable backend.<br><br>
-
-Our community values mentorship, peer review, and collective ownership of work. We celebrate small wins, learn from bugs together, and pick each other up when things don’t compile (literally or metaphorically). We’re proud of what we build — but more importantly, we’re proud of how we build it: together.<br><br>
-
-As students, we know we’re still growing. But with the right team beside us, and a shared commitment to getting better every sprint, we’re confident in the impact we can make — now and in the future.
+                        At SwinTech, innovation is not just a goal — it’s our starting point. We’re a student-led team of aspiring software engineers who believe that progress stems from bold ideas, practical curiosity, and a refusal to settle for “good enough.” Every line of code we write, every system we design, is driven by a desire to explore what’s possible — not just what’s been done before.<br>
+                        Our projects blend creativity with real-world application. From cloud-native systems to responsive web platforms, we build not just to learn, but to solve. As the tech landscape evolves, so do we — learning new tools, adopting modern frameworks, and experimenting with emerging technologies like AI integration and microservice architecture. Innovation is not a department — it’s our culture.
+                    </h4>
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <h3 id="company-description-subheading-2">Community</h3>
+                    <br><br>
+                    <h4 id="company-description-text-left-2">
+                        Behind every commit is a conversation, and behind every deployment is a team. At SwinTech, we believe that great software is built through collaboration, not isolation. We foster a supportive, respectful environment where ideas are challenged, voices are heard, and everyone contributes — whether you're writing your first CSS file or architecting a scalable backend.<br>
+                        Our community values mentorship, peer review, and collective ownership of work. We celebrate small wins, learn from bugs together, and pick each other up when things don’t compile (literally or metaphorically). We’re proud of what we build — but more importantly, we’re proud of how we build it: together.<br>
+                        As students, we know we’re still growing. But with the right team beside us, and a shared commitment to getting better every sprint, we’re confident in the impact we can make — now and in the future.
                     </h4>
                 </fieldset>
             </fieldset>
+            <br><br><br>
             <fieldset class="master-mission-statement-fieldset" id="master-mission-statement-fieldset">
                 <fieldset class="mission-statement-fieldset">
                     <h1 id="company-description-heading">
                         Our Mission:  
                     </h1> 
                     <h3 class="mission-statement-text">At SwinTech, our mission is simple yet ambitious: to build real solutions while building real skills. We are a student-driven development team committed to turning theory into practice through meaningful tech projects. We want our members to walk away not just with grades, but with portfolios, production experience, and confidence to step into the industry.<br><br>
-
-We aim to create an environment where learning is active, collaboration is essential, and failure is just part of the iteration cycle. Whether we’re developing a client-side application, deploying a backend on the cloud, or debugging a stubborn CSS alignment issue — we treat each challenge as an opportunity to grow.<br><br>
+                    We aim to create an environment where learning is active, collaboration is essential, and failure is just part of the iteration cycle. Whether we’re developing a client-side application, deploying a backend on the cloud, or debugging a stubborn CSS alignment issue — we treat each challenge as an opportunity to grow.
                 </fieldset>
                 <img src="project1/styles/images/index_img/community-tech-help.jpg" alt="IT Consultant smiling" id="tech-help-img1">
             </fieldset>
+            <br>
         </main>
         <!-- Footer -->
         <footer id="footer">
