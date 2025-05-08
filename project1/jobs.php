@@ -11,7 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&amp;family=Onest:wght@100..900&amp;display=swap"
     rel="stylesheet" />
-  <link href="../project1/stylesheets/styles.css" rel="stylesheet">
+  <link href="../project1/styles/styles.css" rel="stylesheet">
 </head>
 
 <body id="jobs-page">
@@ -24,7 +24,7 @@
       <a href="../project1/about.php"><button class="job-nav-btn">About</button></a>
     </nav>
     <div class="job-logo">
-      <img alt="Company Logo" src="../project1/stylesheets/images/index_img/logo.png"/>
+      <img alt="Company Logo" src="../project1/styles/images/index_img/logo.png"/>
     </div>
   </header>
   <!---------------------------------------- main body  ---------------------------------------->
@@ -40,7 +40,7 @@
         <!-- Item 1 -->
         <div class="job-working-experience-item item-1">
           <div class="job-working-experience-img">
-            <img alt="Experience 1" src="../project1/stylesheets/images/jobs_img/working_experience_1_C.jpg" />
+            <img alt="Experience 1" src="../project1/styles/images/jobs_img/working_experience_1_C.jpg" />
             <div class="job-experience-selector" role="group" aria-label="Select Experience">
               <label for="exp-1" aria-label="Experience 1"></label>
               <label for="exp-2" aria-label="Experience 2"></label>
@@ -59,7 +59,7 @@
         <!-- Item 2 -->
         <div class="job-working-experience-item item-2">
           <div class="job-working-experience-img">
-            <img alt="Experience 2" src="../project1/stylesheets/images/jobs_img/working_experience_3_C.jpg" />
+            <img alt="Experience 2" src="../project1/styles/images/jobs_img/working_experience_3_C.jpg" />
             <div class="job-experience-selector">
               <label for="exp-1"></label>
               <label for="exp-2"></label>
@@ -78,7 +78,7 @@
         <!-- Item 3 -->
         <div class="job-working-experience-item item-3">
           <div class="job-working-experience-img">
-            <img alt="Experience 3" src="../project1/stylesheets/images/jobs_img/working_experience_2_c.jpg" />
+            <img alt="Experience 3" src="../project1/styles/images/jobs_img/working_experience_2_c.jpg" />
             <div class="job-experience-selector">
               <label for="exp-1"></label>
               <label for="exp-2"></label>
@@ -530,31 +530,31 @@
             <div class="job-help-btn-panel-grid">
               <a class="btn-support-link" href="https://www.indigenous.gov.au/" rel="noopener noreferrer"
                 target="_blank">
-                <img alt="We support First Nations people" src="/project1/stylesheets/images/jobs_img/fn.png"
+                <img alt="We support First Nations people" src="/project1/styles/images/jobs_img/fn.png"
                   title="We support First Nations people" />
               </a>
               <a class="btn-support-link" href="https://wit.org.au/" rel="noopener noreferrer" target="_blank">
-                <img alt="We support women in tech" src="/project1/stylesheets/images/jobs_img/wit.png"
+                <img alt="We support women in tech" src="/project1/styles/images/jobs_img/wit.png"
                   title="We support women in tech" />
               </a>
               <a class="btn-support-link" href="https://www.disabilitygateway.gov.au/" rel="noopener noreferrer"
                 target="_blank">
                 <img alt="We support disability
-              inclusion" src="/project1/stylesheets/images/jobs_img/dis.png" title="We support disability inclusion" />
+              inclusion" src="/project1/styles/images/jobs_img/dis.png" title="We support disability inclusion" />
               </a>
               <a class="btn-support-link" href="https://www.youth.gov.au/" rel="noopener noreferrer" target="_blank">
-                <img alt="We support young Australians" src="/project1/stylesheets/images/jobs_img/yt.png"
+                <img alt="We support young Australians" src="/project1/styles/images/jobs_img/yt.png"
                   title="We support young Australians" />
               </a>
               <a class="btn-support-link"
                 href="https://aifs.gov.au/resources/resource-sheets/key-organisations-working-culturally-and-linguistically-diverse-families"
                 rel="noopener noreferrer" target="_blank">
-                <img alt="We support multicultural voices" src="/project1/stylesheets/images/jobs_img/mv.png"
+                <img alt="We support multicultural voices" src="/project1/styles/images/jobs_img/mv.png"
                   title="We support multicultural voices" />
               </a>
               <a class="btn-support-link" href="https://www.medicarementalhealth.gov.au/" rel="noopener noreferrer"
                 target="_blank">
-                <img alt="We support mental wellbeing for all" src="/project1/stylesheets/images/jobs_img/wa.png"
+                <img alt="We support mental wellbeing for all" src="/project1/styles/images/jobs_img/wa.png"
                   title="We support mental wellbeing for all" />
               </a>
             </div>
@@ -623,29 +623,29 @@
           careers. We recognise that diversity in our workforce strengthens our work in the community.
         </div>
         <a class="support-link" href="https://www.indigenous.gov.au/" rel="noopener noreferrer" target="_blank">
-          <img alt="We support First Nations people" src="../project1/stylesheets/images/jobs_img/fn.png"
+          <img alt="We support First Nations people" src="../project1/styles/images/jobs_img/fn.png"
             title="We support First Nations people" />
         </a>
         <a class="support-link" href="https://wit.org.au/" rel="noopener noreferrer" target="_blank">
-          <img alt="We support women in tech" src="../project1/stylesheets/images/jobs_img/wit.png" title="We support women in tech" />
+          <img alt="We support women in tech" src="../project1/styles/images/jobs_img/wit.png" title="We support women in tech" />
         </a>
         <a class="support-link" href="https://www.disabilitygateway.gov.au/" rel="noopener noreferrer" target="_blank">
           <img alt="We support disability
-          inclusion" src="../project1/stylesheets/images/jobs_img/dis.png" title="We support disability inclusion" />
+          inclusion" src="../project1/styles/images/jobs_img/dis.png" title="We support disability inclusion" />
         </a>
         <a class="support-link" href="https://www.youth.gov.au/" rel="noopener noreferrer" target="_blank">
-          <img alt="We support young Australians" src="../project1/stylesheets/images/jobs_img/yt.png"
+          <img alt="We support young Australians" src="../project1/styles/images/jobs_img/yt.png"
             title="We support young Australians" />
         </a>
         <a class="support-link"
           href="https://aifs.gov.au/resources/resource-sheets/key-organisations-working-culturally-and-linguistically-diverse-families"
           rel="noopener noreferrer" target="_blank">
-          <img alt="We support multicultural voices" src="../project1/stylesheets/images/jobs_img/mv.png"
+          <img alt="We support multicultural voices" src="../project1/styles/images/jobs_img/mv.png"
             title="We support multicultural voices" />
         </a>
         <a class="support-link" href="https://www.medicarementalhealth.gov.au/" rel="noopener noreferrer"
           target="_blank">
-          <img alt="We support mental wellbeing for all" src="../project1/stylesheets/images/jobs_img/wa.png"
+          <img alt="We support mental wellbeing for all" src="../project1/styles/images/jobs_img/wa.png"
             title="We support mental wellbeing for all" />
         </a>
         <!-- Image License Statement

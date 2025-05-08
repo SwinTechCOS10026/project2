@@ -8,7 +8,7 @@
 		<meta name="author: " content="Chea Roelink">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Home</title>
-        <link rel="stylesheet" href="project1/stylesheets/styles.css">
+        <link rel="stylesheet" href="project1/styles/styles.css">
     </head>
 
     <!-- body -->
@@ -17,13 +17,13 @@
         <header class="job-header" id="main-content">
 
             <nav class="job-nav-bar">
-              <a href="../index.php"><button class="job-nav-btn">Home</button></a>
+              <a href="../SwinTech-GroupProject/index.php"><button class="job-nav-btn">Home</button></a>
               <a href="project1/jobs.php"><button class="job-nav-btn">Jobs</button></a>
               <a href="project1/apply.php"><button class="job-nav-btn">Apply</button></a>
               <a href="project1/about.php"><button class="job-nav-btn">About</button></a>
             </nav>
             <div class="job-logo">
-              <a href="index.php"><img src="https://swintechcos10026.github.io/SwinTech-GroupProject/project1/stylesheets/images/index_img/logo.png" alt="Company Logo"></a>
+              <a href="index.php"><img src="project1/styles/images/index_img/logo.png" alt="Company Logo"></a>
             </div>
         </header>
               <!--- feedback aside --->
@@ -98,7 +98,7 @@ As students, we know we’re still growing. But with the right team beside us, a
 
 We aim to create an environment where learning is active, collaboration is essential, and failure is just part of the iteration cycle. Whether we’re developing a client-side application, deploying a backend on the cloud, or debugging a stubborn CSS alignment issue — we treat each challenge as an opportunity to grow.<br><br>
                 </fieldset>
-                <img src="stylesheets/images/index_img/community-tech-help.jpg" alt="IT Consultant smiling" id="tech-help-img1">
+                <img src="project1/styles/images/index_img/community-tech-help.jpg" alt="IT Consultant smiling" id="tech-help-img1">
             </fieldset>
         </main>
         <!-- Footer -->
