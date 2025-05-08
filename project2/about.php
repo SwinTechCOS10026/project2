@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Onest:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Link to our main external stylesheet for styling -->
-    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <!-- Page header including navigation and logo -->
@@ -28,7 +28,7 @@
         </nav>
         <!-- SwinTech logo image -->
         <div class="job-logo">
-            <a href="../index.php"><img src="stylesheets/images/index_img/logo.png" alt="Company Logo"></a>
+            <a href="../index.php"><img src="styles/images/index_img/logo.png" alt="Company Logo"></a>
         </div>
     </header>
 
@@ -87,7 +87,7 @@
             <h2 class="about-us-section-title">Our Group Photo</h2>
             <figure class="about-us-figure">
                 <!-- Image of the group with a caption -->
-                <img src="stylesheets/images/about_img/swintech-group-photo.jpg" alt="Group photo of SwinTech team" width="400">
+                <img src="styles/images/about_img/swintech-group-photo.jpg" alt="Group photo of SwinTech team" width="400">
                 <figcaption>Our awesome team at Swinburne campus</figcaption>
             </figure>
         </section>
@@ -136,9 +136,9 @@
                 <p>🌍 Our team comes from:</p>
                 <div class="flag-container">
                     <!-- Display flags and country names -->
-                    <div class="flag-box"><img src="stylesheets/images/about_flags/au.png" alt="Australia Flag"><span>Australia</span></div>
-                    <div class="flag-box"><img src="stylesheets/images/about_flags/uae.png" alt="UAE Flag"><span>UAE</span></div>
-                    <div class="flag-box"><img src="stylesheets/images/about_flags/china.png" alt="China Flag"><span>China</span></div>
+                    <div class="flag-box"><img src="styles/images/about_flags/au.png" alt="Australia Flag"><span>Australia</span></div>
+                    <div class="flag-box"><img src="styles/images/about_flags/uae.png" alt="UAE Flag"><span>UAE</span></div>
+                    <div class="flag-box"><img src="styles/images/about_flags/china.png" alt="China Flag"><span>China</span></div>
                 </div>
             </div>
 
@@ -204,7 +204,7 @@
             <li><a href="about.php" id="footer-a-page-links">About</a></li>
             <li><a href="jobs.php" id="footer-a-page-links">Jobs</a></li>
         </ul>
-
+        
         <!-- Newsletter form to allow visitors to subscribe -->
         <form method="post" action="">
             <h3 id="newsletter-title">Newsletter:</h3>

@@ -8,7 +8,7 @@
     <meta name="author: " content="Jack Milan Krbaleski">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
-    <link rel="stylesheet" href="../project1/stylesheets/styles.css">
+    <link rel="stylesheet" href="../project2/styles/styles.css">
 </head>
 
 <body>
@@ -16,12 +16,12 @@
 
         <nav class="job-nav-bar">
             <a href="../index.php"><button class="job-nav-btn">Home</button></a>
-            <a href="../project1/jobs.php"><button class="job-nav-btn">Jobs</button></a>
-            <a href="../project1/apply.php"><button class="job-nav-btn">Apply</button></a>
-            <a href="../project1/about.php"><button class="job-nav-btn">About</button></a>
+            <a href="../project2/jobs.php"><button class="job-nav-btn">Jobs</button></a>
+            <a href="../project2/apply.php"><button class="job-nav-btn">Apply</button></a>
+            <a href="../project2/about.php"><button class="job-nav-btn">About</button></a>
         </nav>
         <div class="job-logo">
-            <a href="index.php"><img src="../project1/stylesheets/images/index_img/logo.png" alt="Company Logo"></a>
+            <a href="index.php"><img src="../project2/styles/images/index_img/logo.png" alt="Company Logo"></a>
         </div>
     </header>
 
@@ -204,8 +204,8 @@
         <ul id="footer-ul-page-links">
             <h3>Pages:</h3>
             <li><a href="../index.php" id="footer-a-page-links">Home</a></li>
-            <li><a href="../project1/about.php" id="footer-a-page-links">About</a></li>
-            <li><a href="../project1/jobs.php" id="footer-a-page-links">Jobs</a></li>
+            <li><a href="../project2/about.php" id="footer-a-page-links">About</a></li>
+            <li><a href="../project2/jobs.php" id="footer-a-page-links">Jobs</a></li>
         </ul>
         <!-- newsletter entry -->
         <form method="post"></form>
