@@ -5,7 +5,8 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Jobs</title>
+  <meta name="description" content="Job descriptions for the available positions at SwinTech">
+  <title>Job Description - SwinTech</title>
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
   <link

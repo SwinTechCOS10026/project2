@@ -7,7 +7,7 @@
     <meta name="keywords" content="php, Doctype, Head, Body, Meta, Paragraph, Headings, Strong, Emphasis, form">
     <meta name="author: " content="Jack Milan Krbaleski">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Application Form</title>
+    <title>Application - SwinTech</title>
     <link rel="stylesheet" href="../project2/styles/styles.css">
 </head>
 

@@ -4,7 +4,7 @@
     <!-- Set character encoding and make the page responsive on all devices -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="description" content="The core team of SwinTech">
     <!-- Title of the page shown in the browser tab -->
     <title>About Us - SwinTech</title>
 
@@ -204,7 +204,7 @@
             <li><a href="about.php" id="footer-a-page-links">About</a></li>
             <li><a href="jobs.php" id="footer-a-page-links">Jobs</a></li>
         </ul>
-        
+
         <!-- Newsletter form to allow visitors to subscribe -->
         <form method="post" action="">
             <h3 id="newsletter-title">Newsletter:</h3>

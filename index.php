@@ -3,11 +3,11 @@
     <!-- head -->
 	<head>
 		<meta charset="utf-8">
-        <meta name="description" content="swintech home page">
+        <meta name="description" content="SwinTech Homepage">
 		<meta name="keywords" content="php, Doctype, Head, Body, Meta, Paragraph, Headings, Strong, Emphasis, form">
 		<meta name="author: " content="Chea Roelink">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Home</title>
+		<title>Homepage - SwinTech</title>
         <link rel="stylesheet" href="project2/styles/styles.css">
     </head>
 
@@ -15,7 +15,6 @@
     <body id="index-body">
         <!-- header -->
         <header class="job-header" id="main-content">
-
             <nav class="job-nav-bar">
               <a href="../SwinTech-GroupProject/index.php"><button class="job-nav-btn">Home</button></a>
               <a href="project2/jobs.php"><button class="job-nav-btn">Jobs</button></a>
