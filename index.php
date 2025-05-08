@@ -8,7 +8,7 @@
 		<meta name="author: " content="Chea Roelink">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Home</title>
-        <link rel="stylesheet" href="project1/styles/styles.css">
+        <link rel="stylesheet" href="project2/styles/styles.css">
     </head>
 
     <!-- body -->
@@ -18,12 +18,12 @@
 
             <nav class="job-nav-bar">
               <a href="../SwinTech-GroupProject/index.php"><button class="job-nav-btn">Home</button></a>
-              <a href="project1/jobs.php"><button class="job-nav-btn">Jobs</button></a>
-              <a href="project1/apply.php"><button class="job-nav-btn">Apply</button></a>
-              <a href="project1/about.php"><button class="job-nav-btn">About</button></a>
+              <a href="project2/jobs.php"><button class="job-nav-btn">Jobs</button></a>
+              <a href="project2/apply.php"><button class="job-nav-btn">Apply</button></a>
+              <a href="project2/about.php"><button class="job-nav-btn">About</button></a>
             </nav>
             <div class="job-logo">
-              <a href="index.php"><img src="project1/styles/images/index_img/logo.png" alt="Company Logo"></a>
+              <a href="index.php"><img src="project2/styles/images/index_img/logo.png" alt="Company Logo"></a>
             </div>
         </header>
               <!--- feedback aside --->
@@ -101,7 +101,7 @@
                     <h3 class="mission-statement-text">At SwinTech, our mission is simple yet ambitious: to build real solutions while building real skills. We are a student-driven development team committed to turning theory into practice through meaningful tech projects. We want our members to walk away not just with grades, but with portfolios, production experience, and confidence to step into the industry.<br><br>
                     We aim to create an environment where learning is active, collaboration is essential, and failure is just part of the iteration cycle. Whether we’re developing a client-side application, deploying a backend on the cloud, or debugging a stubborn CSS alignment issue — we treat each challenge as an opportunity to grow.
                 </fieldset>
-                <img src="project1/styles/images/index_img/community-tech-help.jpg" alt="IT Consultant smiling" id="tech-help-img1">
+                <img src="project2/styles/images/index_img/community-tech-help.jpg" alt="IT Consultant smiling" id="tech-help-img1">
             </fieldset>
             <br>
         </main>
@@ -122,9 +122,9 @@
             </ul>
             <ul id="footer-ul-page-links">
                 <h3>Pages:</h3>
-                <li><a href=".../index.php" id="footer-a-page-links">Home</a></li>
-                <li><a href="https://swintechcos10026.github.io/SwinTech-GroupProject/project1/about.php" id="footer-a-page-links">About</a></li>
-                <li><a href="https://swintechcos10026.github.io/SwinTech-GroupProject/project1/jobs.php" id="footer-a-page-links">Jobs</a></li>
+                <li><a href="../index.php" id="footer-a-page-links">Home</a></li>
+                <li><a href="project2/about.php" id="footer-a-page-links">About</a></li>
+                <li><a href="project2/jobs.php" id="footer-a-page-links">Jobs</a></li>
             </ul>
             <!-- newsletter entry -->
             <form method="post"></form>

@@ -204,7 +204,7 @@
             <li><a href="about.php" id="footer-a-page-links">About</a></li>
             <li><a href="jobs.php" id="footer-a-page-links">Jobs</a></li>
         </ul>
-
+        
         <!-- Newsletter form to allow visitors to subscribe -->
         <form method="post" action="">
             <h3 id="newsletter-title">Newsletter:</h3>
