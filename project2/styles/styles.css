@@ -70,7 +70,7 @@ h3 {
   padding: 0rem 2rem;
   background-color: #eee6db;
   flex-wrap: wrap;
-  width: 98%;
+  width: 80.5em;
   transform: translate(-1%, -6%);
 }
 
@@ -282,8 +282,8 @@ h3 {
   background-image: url('../styles/images/index_img/opening-digital-waves.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 99.57%;
-  height: 20em;
+  width: 82.7em;
+  height: 40em;
   background-size: 150em 50em;
   transform: translate(-1%, -1.3%);
   mask-image: linear-gradient(to bottom, black calc(100% - 5rem), transparent 100%);
@@ -296,7 +296,7 @@ h3 {
   margin-top: 50px;
 }
 #opening-text{
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   word-wrap: normal;
   width: 35em;  
@@ -313,7 +313,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 5em;
-  width: 99.57%;
+  width: 80.5em;
   height: 800px;
   transform: translate(-1%, -1.3%);
   display: flexbox;
@@ -474,7 +474,7 @@ h3 {
   background-color:  #eee6db41;
   mask-image: linear-gradient(to right, black calc(100% - 10rem), transparent 100%);
   margin-bottom: 50%;
-  margin-left: 14%;
+  margin-left: 1em;
   float: left, top;
 }
 .mission-statement-text{
@@ -496,8 +496,8 @@ h3 {
   height: 25rem;
   float: right, top;
   clear: both;
-  margin-top: 3%;
-  margin-left: 49%;
+  margin-top: 1em;
+  margin-left: 40em;
   mask-image: linear-gradient(to left, black calc(100% - 10rem), transparent 100%);
   
 }
