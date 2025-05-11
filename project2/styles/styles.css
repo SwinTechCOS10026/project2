@@ -70,7 +70,7 @@ h3 {
   padding: 0rem 2rem;
   background-color: #eee6db;
   flex-wrap: wrap;
-  width: 80.5em;
+  width: 96.5%;
   transform: translate(-1%, -6%);
 }
 
@@ -282,10 +282,11 @@ h3 {
   background-image: url('../styles/images/index_img/opening-digital-waves.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 82.7em;
+  width: 99%;
   height: 40em;
   background-size: 150em 50em;
-  transform: translate(-1%, -1.3%);
+  margin-top: -0.6%;
+  margin-left: -0.6%;
   mask-image: linear-gradient(to bottom, black calc(100% - 5rem), transparent 100%);
 }
 #opening-heading{
@@ -313,9 +314,8 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 5em;
-  width: 80.5em;
+  width: 99.5%;
   height: 800px;
-  transform: translate(-1%, -1.3%);
   display: flexbox;
 }
 .company-description-fieldset-left{
