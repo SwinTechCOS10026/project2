@@ -3,7 +3,7 @@
 
 <div class="job-exp-container">
   <div class="job-exp-image">
-    <img src="images/jobs/working_experience.jpg" alt="Team collaborating on data charts around a desk">
+    <img src="/styles/images/jobs/working_experience.jpg" alt="Team collaborating on data charts around a desk">
   </div>
   <div class="job-exp-text">
     <p class="job-exp-quote">

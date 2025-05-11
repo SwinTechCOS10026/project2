@@ -12,22 +12,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&amp;family=Onest:wght@100..900&amp;display=swap"
     rel="stylesheet" />
-  <link href="../project2/styles/styles.css" rel="stylesheet">
+  <link href="styles/styles.css" rel="stylesheet">
 </head>
 
 <body id="jobs-page">
   <!---------------------------------------- header ---------------------------------------->
-  <header class="job-header" id="main-content">
-    <nav class="job-nav-bar">
-      <a href="../index.php"><button class="job-nav-btn">Home</button></a>
-      <a href="../project2/jobs.php"><button class="job-nav-btn">Jobs</button></a>
-      <a href="../project2/apply.php"><button class="job-nav-btn">Apply</button></a>
-      <a href="../project2/about.php"><button class="job-nav-btn">About</button></a>
-    </nav>
-    <div class="job-logo">
-      <img alt="Company Logo" src="../project2/styles/images/index_img/logo.png"/>
-    </div>
-  </header>
+  <?php include("../project2/header.inc"); ?>
+  <?php include("../project2/nav.inc"); ?>
   <!---------------------------------------- main body  ---------------------------------------->
   <div class="job-main-content" id="main-contents">
     <!--------------------------- working experience --------------------------->
@@ -41,7 +32,7 @@
         <!-- Item 1 -->
         <div class="job-working-experience-item item-1">
           <div class="job-working-experience-img">
-            <img alt="Experience 1" src="../project2/styles/images/jobs_img/working_experience_1_C.jpg" />
+            <img alt="Experience 1" src="styles/images/jobs_img/working_experience_1_C.jpg" />
             <div class="job-experience-selector" role="group" aria-label="Select Experience">
               <label for="exp-1" aria-label="Experience 1"></label>
               <label for="exp-2" aria-label="Experience 2"></label>
@@ -60,7 +51,7 @@
         <!-- Item 2 -->
         <div class="job-working-experience-item item-2">
           <div class="job-working-experience-img">
-            <img alt="Experience 2" src="../project2/styles/images/jobs_img/working_experience_3_C.jpg" />
+            <img alt="Experience 2" src="styles/images/jobs_img/working_experience_3_C.jpg" />
             <div class="job-experience-selector">
               <label for="exp-1"></label>
               <label for="exp-2"></label>
@@ -79,7 +70,7 @@
         <!-- Item 3 -->
         <div class="job-working-experience-item item-3">
           <div class="job-working-experience-img">
-            <img alt="Experience 3" src="../project2/styles/images/jobs_img/working_experience_2_c.jpg" />
+            <img alt="Experience 3" src="styles/images/jobs_img/working_experience_2_c.jpg" />
             <div class="job-experience-selector">
               <label for="exp-1"></label>
               <label for="exp-2"></label>
@@ -110,7 +101,7 @@
         <button class="job-filter-btn">New Released</button>
         <button class="job-filter-btn">Remote Only</button>
         <button class="job-filter-btn">Reset</button>
-        <button class="job-filter-apply">Apply</button>
+        <button class="job-filter-apply"><a href="../project2/apply.php">Apply</a></button>
       </div>
       <!------ job container ------>
       <div class="job-jobs-container" id="jobs-container">
@@ -531,31 +522,31 @@
             <div class="job-help-btn-panel-grid">
               <a class="btn-support-link" href="https://www.indigenous.gov.au/" rel="noopener noreferrer"
                 target="_blank">
-                <img alt="We support First Nations people" src="/project2/styles/images/jobs_img/fn.png"
+                <img alt="We support First Nations people" src="/styles/images/jobs_img/fn.png"
                   title="We support First Nations people" />
               </a>
               <a class="btn-support-link" href="https://wit.org.au/" rel="noopener noreferrer" target="_blank">
-                <img alt="We support women in tech" src="/project2/styles/images/jobs_img/wit.png"
+                <img alt="We support women in tech" src="/styles/images/jobs_img/wit.png"
                   title="We support women in tech" />
               </a>
               <a class="btn-support-link" href="https://www.disabilitygateway.gov.au/" rel="noopener noreferrer"
                 target="_blank">
                 <img alt="We support disability
-              inclusion" src="/project2/styles/images/jobs_img/dis.png" title="We support disability inclusion" />
+              inclusion" src="/styles/images/jobs_img/dis.png" title="We support disability inclusion" />
               </a>
               <a class="btn-support-link" href="https://www.youth.gov.au/" rel="noopener noreferrer" target="_blank">
-                <img alt="We support young Australians" src="/project2/styles/images/jobs_img/yt.png"
+                <img alt="We support young Australians" src="/styles/images/jobs_img/yt.png"
                   title="We support young Australians" />
               </a>
               <a class="btn-support-link"
                 href="https://aifs.gov.au/resources/resource-sheets/key-organisations-working-culturally-and-linguistically-diverse-families"
                 rel="noopener noreferrer" target="_blank">
-                <img alt="We support multicultural voices" src="/project2/styles/images/jobs_img/mv.png"
+                <img alt="We support multicultural voices" src="/styles/images/jobs_img/mv.png"
                   title="We support multicultural voices" />
               </a>
               <a class="btn-support-link" href="https://www.medicarementalhealth.gov.au/" rel="noopener noreferrer"
                 target="_blank">
-                <img alt="We support mental wellbeing for all" src="/project2/styles/images/jobs_img/wa.png"
+                <img alt="We support mental wellbeing for all" src="/styles/images/jobs_img/wa.png"
                   title="We support mental wellbeing for all" />
               </a>
             </div>
@@ -624,29 +615,29 @@
           careers. We recognise that diversity in our workforce strengthens our work in the community.
         </div>
         <a class="support-link" href="https://www.indigenous.gov.au/" rel="noopener noreferrer" target="_blank">
-          <img alt="We support First Nations people" src="../project2/styles/images/jobs_img/fn.png"
+          <img alt="We support First Nations people" src="styles/images/jobs_img/fn.png"
             title="We support First Nations people" />
         </a>
         <a class="support-link" href="https://wit.org.au/" rel="noopener noreferrer" target="_blank">
-          <img alt="We support women in tech" src="../project2/styles/images/jobs_img/wit.png" title="We support women in tech" />
+          <img alt="We support women in tech" src="styles/images/jobs_img/wit.png" title="We support women in tech" />
         </a>
         <a class="support-link" href="https://www.disabilitygateway.gov.au/" rel="noopener noreferrer" target="_blank">
           <img alt="We support disability
-          inclusion" src="../project2/styles/images/jobs_img/dis.png" title="We support disability inclusion" />
+          inclusion" src="styles/images/jobs_img/dis.png" title="We support disability inclusion" />
         </a>
         <a class="support-link" href="https://www.youth.gov.au/" rel="noopener noreferrer" target="_blank">
-          <img alt="We support young Australians" src="../project2/styles/images/jobs_img/yt.png"
+          <img alt="We support young Australians" src="styles/images/jobs_img/yt.png"
             title="We support young Australians" />
         </a>
         <a class="support-link"
           href="https://aifs.gov.au/resources/resource-sheets/key-organisations-working-culturally-and-linguistically-diverse-families"
           rel="noopener noreferrer" target="_blank">
-          <img alt="We support multicultural voices" src="../project2/styles/images/jobs_img/mv.png"
+          <img alt="We support multicultural voices" src="styles/images/jobs_img/mv.png"
             title="We support multicultural voices" />
         </a>
         <a class="support-link" href="https://www.medicarementalhealth.gov.au/" rel="noopener noreferrer"
           target="_blank">
-          <img alt="We support mental wellbeing for all" src="../project2/styles/images/jobs_img/wa.png"
+          <img alt="We support mental wellbeing for all" src="styles/images/jobs_img/wa.png"
             title="We support mental wellbeing for all" />
         </a>
         <!-- Image License Statement
@@ -659,46 +650,7 @@
       </div>
     </div>
     <!---------------------------------------- footer ---------------------------------------->
-    <footer id="footer">
-      <!-- lists and list items -->
-      <ul id="footer-ul-contacts">
-          <h3>Contacts:</h3>
-          <li>Email: <a id="footer-a-contacts" href="mailto:SwinTechGods@gmail.com">info@Swintech.com</a></li>
-          <li>Phone number: (61) 1234 1234</li>
-          <li>Fax: (61) 123 123 1234 </li>
-      </ul>
-      <ul id="footer-ul-jump-tos">
-          <h3>Jump To:</h3>
-          <li><a href="#main-content" id="footer-a-jump-tos">Top of page</a></li>
-          <li><a href="#jobs-container" id="footer-a-jump-tos">middle</a></li>
-          <li><a href="#help" id="footer-a-jump-tos">end of page</a></li>
-      </ul>
-        <ul id="footer-ul-page-links">
-            <h3>Pages:</h3>
-            <li><a href="../index.php" id="footer-a-page-links">Home</a></li>
-            <li><a href="../project2/about.php" id="footer-a-page-links">About</a></li>
-            <li><a href="../project2/jobs.php" id="footer-a-page-links">Jobs</a></li>
-        </ul>
-      <!-- newsletter entry -->
-      <form method="post"></form>
-          <h3 id="newsletter-title">Newsletter:</h3>
-          <fieldset id="newsletter-fieldset">
-              <label for="newsletter">
-                  <strong>
-                      Want email updates? <br> Sign up for our weekly newsletter! <br>
-                  </strong>
-              </label> 
-              <textarea name= "newsletter" id="newsletter-textarea" placeholder="Enter your email" aria-label="newsletter"></textarea>
-              
-              <input type= "submit" value="Sign up">
-          </fieldset>
-      <!-- extra footer information -->
-      <p id="footer-copyright">Copyright Â© 2025 SwinTech - All Rights reserved</p>
-      <a target="_blank" href="https://swintech1234.atlassian.net/jira/software/projects/SWIN/summary" id="footer-privacy">Jira Management</a>
-      <a target="_blank" href="https://github.com/SwinTechCOS10026/SwinTech-GroupProject.git" id="footer-privacy">Github Repostitory</a>
-      <a target="_blank" href="../extra-files-for-links/Placeholder%20Privacy%20Policy.pdf" id="footer-privacy">Privacy policy</a>
-      <a target="_blank" href="../extra-files-for-links/Terms_and_Services_Agreement.pdf" id="footer-terms">Terms &amp; Services</a>
-  </footer>
+    <?php include("../project2/footer.inc"); ?>
     <script>
     </script>
   </div>

@@ -8,22 +8,12 @@
     <meta name="author: " content="Jack Milan Krbaleski">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application - SwinTech</title>
-    <link rel="stylesheet" href="../project2/styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <header class="job-header" id="main-content">
-
-        <nav class="job-nav-bar">
-            <a href="../index.php"><button class="job-nav-btn">Home</button></a>
-            <a href="../project2/jobs.php"><button class="job-nav-btn">Jobs</button></a>
-            <a href="../project2/apply.php"><button class="job-nav-btn">Apply</button></a>
-            <a href="../project2/about.php"><button class="job-nav-btn">About</button></a>
-        </nav>
-        <div class="job-logo">
-            <a href="index.php"><img src="../project2/styles/images/index_img/logo.png" alt="Company Logo"></a>
-        </div>
-    </header>
+    <?php include("../project2/header.inc"); ?>
+    <?php include("../project2/nav.inc"); ?>
 
     <div class="apply-wrapper">
         <h2 class="apply-title">Job Application Form</h2>
@@ -187,46 +177,7 @@
         </div>
       </aside>
     <!-- Footer -->
-    <footer id="footer">
-        <!-- lists and list items -->
-        <ul id="footer-ul-contacts">
-            <h3>Contacts:</h3>
-            <li>Email: <a id="footer-a-contacts" href="mailto:SwinTechGods@gmail.com">info@Swintech.com</a></li>
-            <li>Phone number: (61) 1234 1234</li>
-            <li>Fax: (61) 123 123 1234 </li>
-        </ul>
-        <ul id="footer-ul-jump-tos">
-            <h3>Jump To:</h3>
-            <li><a href="#main-content" id="footer-a-jump-tos">Top of page</a></li>
-            <li><a href="#dob" id="footer-a-jump-tos">middle</a></li>
-            <li><a href="#footer" id="footer-a-jump-tos">end of page</a></li>
-        </ul>
-        <ul id="footer-ul-page-links">
-            <h3>Pages:</h3>
-            <li><a href="../index.php" id="footer-a-page-links">Home</a></li>
-            <li><a href="../project2/about.php" id="footer-a-page-links">About</a></li>
-            <li><a href="../project2/jobs.php" id="footer-a-page-links">Jobs</a></li>
-        </ul>
-        <!-- newsletter entry -->
-        <form method="post"></form>
-            <h3 id="newsletter-title">Newsletter:</h3>
-            <fieldset id="newsletter-fieldset">
-                <label for="newsletter">
-                    <strong>
-                        Want email updates? <br> Sign up for our weekly newsletter! <br>
-                    </strong>
-                </label> 
-                <textarea name= "newsletter" id="newsletter-textarea" placeholder="Enter your email" aria-label="newsletter"></textarea>
-                
-                <input type= "submit" value="Sign up">
-            </fieldset>
-        <!-- extra footer information -->
-        <p id="footer-copyright">Copyright Â© 2025 SwinTech - All Rights reserved</p>
-        <a target="_blank" href="https://swintech1234.atlassian.net/jira/software/projects/SWIN/summary" id="footer-privacy">Jira Management</a>
-        <a target="_blank" href="https://github.com/SwinTechCOS10026/SwinTech-GroupProject.git" id="footer-privacy">Github Repostitory</a>
-        <a target="_blank" href="../extra-files-for-links/Placeholder Privacy Policy.pdf" id="footer-privacy">Privacy policy</a>
-        <a target="_blank" href="../extra-files-for-links/Terms_and_Services_Agreement.pdf" id="footer-terms">Terms &amp; Services</a>
-    </footer>
+    <?php include("../project2/footer.inc"); ?>
 </body>
 
 </html>
