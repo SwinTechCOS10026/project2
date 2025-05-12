@@ -238,16 +238,16 @@ h3 {
 /*#region ====================> index.php - home page <========================================== */
 
 #opening-fieldset-background{
-  border: 1px solid #e2bf8f;
+  border: 0px solid #e2bf8f;
   background-image: url('../styles/images/index_img/opening-digital-waves.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 98.82%;
+  width: 98.3%;
   height: 40em;
-  background-size: 150em 50em;
-  margin-top: -0.6%;
-  margin-left: -0.03%;
+  background-size: 130em 50em;
   mask-image: linear-gradient(to bottom, black calc(100% - 5rem), transparent 100%);
+  display: flexbox;
+  transform: translateX(-0.2%);
 }
 #opening-heading{
   font-size: 8em;
@@ -262,21 +262,21 @@ h3 {
   word-wrap: normal;
   width: 35em;  
   position: absolute;
-  padding-left: 34%;
+  padding-left: 25%;
   transform: translate(0%, -200%);
 }
 /* company description */
 #index-body{
   background-color: white;
-  margin-right: 0.7%;
+  margin: 0;
 }
 #master-fieldset-background{
   border: 0px solid #eee6db;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 5em;
-  width: 99.5%;
-  height: 800px;
+  width: 97.5%;
+  height: 600px;
   display: flexbox;
 }
 .company-description-fieldset-left{
@@ -285,7 +285,7 @@ h3 {
   border: 0px solid #eee6db;
   float: left;
   width: 67.8%;
-  height: 80%;
+  height: 90%;
   background-blend-mode: normal;
   border-radius: 10px;
 	animation-name: fadeInOpacity;
@@ -439,7 +439,6 @@ h3 {
   float: left, top;
 }
 .mission-statement-text{
-  transform: translate(0%, 20%);
   text-align: left, end;
   display: inline-block;
   position: absolute;
@@ -450,7 +449,8 @@ h3 {
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 2.7s;
-  margin-top: 5%;
+  margin-top: 10%;
+  font-size: 80%;
 }
 #tech-help-img1{
   width: 30%;

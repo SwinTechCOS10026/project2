@@ -23,9 +23,9 @@
       <ul>
         <li><a target="_blank" href="https://www.w3.org/WAI/">Accessibility</a></li>
         <li><a target="_blank" href="https://www.freeprivacypolicy.com/live/292d5595-d5c5-45e2-86a0-520d0141f5de">Cookie Policy</a></li>
-        <li><a target="_blank" href="https://swintechcos10026.github.io/SwinTech-GroupProject/extra-files-for-links/SwinTch_website_disclaimer.pdf">Disclaimer</a></li>
-        <li><a target="_blank" href="../project2/extra-files-for-links/Placeholder_Privacy_Policy.pdf">Privacy Policy</a></li>
-        <li><a target="_blank" href="../project2/extra-files-for-links/Terms_and_Services_Agreement.pdf">Terms & Services</a></li>
+        <li><a target="_blank" href="../extra-files-for-links/SwinTch_website_disclaimer.pdf">Disclaimer</a></li>
+        <li><a target="_blank" href="../extra-files-for-links/Placeholder_Privacy_Policy.pdf">Privacy Policy</a></li>
+        <li><a target="_blank" href="../extra-files-for-links/Terms_and_Services_Agreement.pdf">Terms & Services</a></li>
         
       </ul>
     </div>
