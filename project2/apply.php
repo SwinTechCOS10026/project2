@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include("header.inc"); ?>
+<?php include("nav.inc"); ?>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Job application form for available positions at SwinTech">
-    <meta name="keywords" content="php, Doctype, Head, Body, Meta, Paragraph, Headings, Strong, Emphasis, form">
-    <meta name="author: " content="Jack Milan Krbaleski">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application - SwinTech</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-
-<body>
-    <?php include("../project2/header.inc"); ?>
-    <?php include("../project2/nav.inc"); ?>
-
+<div class="manage-banner">
+  <img src="images/apply_img/banner.jpg" alt="Apply Banner">
+   <div class="banner-text">Join Us</div>
+</div>
     <div class="apply-wrapper">
         <h2 class="apply-title">Job Application Form</h2>
         <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" class="apply-form">
@@ -24,12 +14,12 @@
 
                     <div class="form-row">
                         <label for="fname">First Name:</label>
-                        <input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,20}" placeholder="John" required>
+                        <input type="text" id="fname" name="fname" pattern="[A-Za-z]{1,20}" placeholder="" required>
                     </div>
 
                     <div class="form-row">
                         <label for="lname">Family Name:</label>
-                        <input type="text" id="lname" name="lname" pattern="[A-Za-z]{1,20}" placeholder="Doe"required>
+                        <input type="text" id="lname" name="lname" pattern="[A-Za-z]{1,20}" placeholder="" required>
                     </div>
 
                     <div class="form-row">
@@ -39,23 +29,20 @@
 
                     <div class="form-row">
                         <label for="phonenum">Phone Number:</label>
-                        <input type="tel" id="phonenum" name="phonenum" pattern="[0-9]{8,12}" placeholder="123412341234" required>
+                        <input type="tel" id="phonenum" name="phonenum" pattern="[0-9]{8,12}" placeholder="" required>
                     </div>
                     <div class="form-row">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                        <input type="email" id="email" name="email" placeholder="" required>
                     </div>
-
-                    <div class="form-row">
-                        <fieldset>
-                            <legend>Gender</legend>
-                            <input type="radio" id="male" name="gender" value="Male">
-                            <label for="male">Male</label><br>
-                            <input type="radio" id="female" name="gender" value="Female">
-                            <label for="female">Female</label><br>
-                            <input type="radio" id="other" name="gender" value="Other">
-                            <label for="other">Other</label>
-                        </fieldset>
+                      <div class="form-row">
+                        <label for="gender">Gender</label>
+                            <select name="gender" id="gender" required>
+                            <option value="" disabled selected>Select your gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                            </select>
                     </div>
                 </fieldset>
 
@@ -65,15 +52,17 @@
                     <div class="form-row">
                         <label for="jobref">Job Reference Numer:</label>
                             <select name="jobref" id="jobref" required>
-                                <option value="00012">00012</option>
-                                <option value="00026">00026</option>
-                                <option value="00027">00027</option>
+                            <option value="" disabled selected>Select Job Reference</option>
+                            <option value="00012">00012</option>
+                            <option value="00026">00026</option>
+                            <option value="00027">00027</option>
                             </select>
                     </div>
                     
                     <div class="form-row">
                             <label for="state">State:</label>
-                            <select name="state" id="state" required>
+                           <select name="state" id="state" required>
+                            <option value="" disabled selected>Select State</option>
                             <option value="vic">VIC</option>
                             <option value="tas">TAS</option>
                             <option value="wa">WA</option>
@@ -87,22 +76,22 @@
                     
                     <div class="form-row">
                         <label for="postcode">Postcode:</label>
-                        <input type="number" id="postcode" name="postcode" min="200" max="9924" placeholder = "1234" required>
+                        <input type="number" id="postcode" name="postcode" min="200" max="9924" placeholder = "" required>
                     </div>
 
                     <div class="form-row">
-                        <label: for="streetaddress">Street Address:</label>
-                        <input type="text" id="streetaddress" name="streetaddress" max="40" placeholder="48 path st" required>
+                        <label for="streetaddress">Street Address:</label>
+                        <input type="text" id="streetaddress" name="streetaddress" maxlength="40" placeholder="" required>
                     </div>
 
                     <div class="form-row">
                         <label for="address">Home Address:</label>
-                        <input type="text" id="address" name="address" pattern=".{5,100}" placeholder="Unit 4 48 path st"  required>
+                        <input type="text" id="address" name="address" pattern=".{5,100}" placeholder=""  required>
                     </div>
                 </fieldset>
             </div>
 
-            <class="apply-fieldset">
+            <fieldset class="apply-fieldset">
                 <legend class="apply-legend">Questions</legend>
 
                 <div class="form-row">
@@ -111,8 +100,14 @@
                 </div>
 
                 <div class="form-row checkbox-row">
-                    <label for="prevex">Do you have previous experience in this line of work?</label>
-                    <input type="checkbox" id="prevex" name="prevex" plaecholder="Your text here">
+                    <label>Do you have previous experience in this line of work?</label>
+                      <label>
+                        <input type="checkbox" name="prevex-yes"> Yes
+                      </label>
+                      
+                      <label>
+                        <input type="checkbox" name="prevex-no"> No
+                      </label>
                 </div>
 
                 <div class="form-row">
@@ -129,55 +124,17 @@
                         <label for="php">Know how to use php</label><br>
                     </fieldset>
                 </div>
-                <div class="form-row"></div>
+                <div class="form-row">
                     <label for="relskills">Other Relevent Skills:</label>
-                    <br>
                     <textarea id="relskills" name="relskills" rows="4" cols="50" placeholder="Your text here"></textarea>
                 </div>
             </fieldset>
 
             <div class="form-row">
-                <button type="submit" class="btn-gold">Apply</button>
+                <button id="apply-btn" type="submit" class="btn-gold">Apply</button>
             </div>
         </form>
     </div>
-    <aside class="jobs-contact-aside" aria-label="Contact Us Sidebar">
 
-        <input type="checkbox" id="jobs-contact-toggle" class="jobs-contact-toggle" hidden>
-
-        <label for="contact-toggle" class="jobs-contact-btn" aria-label="Open Contact Form">
-          <span class="jobs-contact-icon">💬</span>
-        </label>
-
-        <!-- contact panel -->
-        <div class="jobs-contact-panel">
-          <!-- close button -->
-          <label for="jobs-contact-toggle" class="jobs-contact-close" aria-label="Close Contact Form">×</label>
-
-          <h3 class="jobs-contact-title">Contact Us</h3>
-          <p class="jobs-contact-note">
-            We value every voice. Whether you have questions, feedback, or just want to say hi — this is the place.
-            Our team reads every message, and we’ll get back to you as soon as we can.
-          </p>
-          <form class="jobs-contact-form">
-            <label for="jobs-contact-name">Name</label>
-            <input type="text" id="jobs-contact-name" name="jobs-contact-name">
-
-            <label for="jobs-contact-phone">Phone</label>
-            <input type="email" id="jobs-contact-phone" name="jobs-contact-phone">
-
-            <label for="jobs-contact-email">Email</label>
-            <input type="email" id="jobs-contact-email" name="jobs-contact-email">
-
-            <label for="jobs-contact-message">Message</label>
-            <textarea id="jobs-contact-message" name="jobs-contact-message" rows="5"></textarea>
-
-            <button type="submit" class="btn-gold" id="jobs-contact-form-submit">Send Message</button>
-          </form>
-        </div>
-      </aside>
     <!-- Footer -->
-    <?php include("../project2/footer.inc"); ?>
-</body>
-
-</html>
+<?php include("footer.inc"); ?>

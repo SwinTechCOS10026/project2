@@ -1,8 +1,6 @@
-# For connecting PHP to DB
-
 <?php
-$host = "localhost";
-$user = "root";     // default XAMPP user
-$pwd = "";          // default empty password
-$sql_db = "cos10026_project";
+$host = "127.0.0.1";
+$user = "root";
+$pwd = ""; 
+$sql_db = "swintech"; 
 ?>
