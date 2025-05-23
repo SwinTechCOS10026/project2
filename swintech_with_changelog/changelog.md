@@ -16,7 +16,7 @@ Enhancement page not finalized
 apply.php EOI sql not finalized
 index, jobs, about page finalized
 
-v0.2 - planned
+v0.2 2025-05-23
 Float Manage link to far right
 Manage page:
   Split layout: Left – Login, Right – Register
