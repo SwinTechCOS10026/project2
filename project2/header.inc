@@ -1,3 +1,4 @@
+<!-- header.inc -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,9 +12,8 @@
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&amp;family=Onest:wght@100..900&amp;display=swap"
             rel="stylesheet">
         <link rel="icon" href="images/icon.png" type="image/png">
-        <link rel="stylesheet" href="../project2/styles/styles.css">
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
-<!-- header.inc -->
 <body class="<?php echo isset($pageClass) ? $pageClass : ''; ?>">
   <header class="header">
     <div class="logo">

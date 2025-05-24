@@ -37,8 +37,33 @@ body {
   color: #d6be76;
 }
 
-/* #endregion */
+.center-message {
+  text-align: center;
+  margin-top: 1rem;
+}
 
+.alert-msg {
+  color: #3c2b24;
+  margin: 1.5rem auto;
+  width: fit-content;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  animation: flash-glow 1s ease-in-out 0.8s 4 alternate;
+}
+
+@keyframes flash-glow {
+  from {
+    transform: scale(1.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+
+/* #endregion */
 
 /* #region =======================》 Header 《======================= */
 .header {

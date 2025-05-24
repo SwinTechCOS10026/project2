@@ -1,119 +1,218 @@
-<!-- Header -->
+
+<?php
+session_start();
+require_once("settings.php");
+mysqli_report(MYSQLI_REPORT_OFF); 
+
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header("Location: login.php");
+    exit();
+}
+
+$conn = @mysqli_connect($host, $user, $pwd, $sql_db);
+if (!$conn) {
+    include("header.inc");
+    include("nav.inc");
+    echo "<div class='center-message'>
+            <p class='alert-msg'>⚠️ Unable to connect to server. Please try again later.</p>
+          </div>";
+    include("footer.inc");
+    exit();
+}
+?>
+
 <?php include("header.inc"); ?>
 <?php include("nav.inc"); ?>
 
 <!-- Banner -->
 <div class="manage-banner">
   <img src="images/manage_img/banner.jpg" alt="HR Management Banner">
-   <div class="banner-text">Manage Applications</div>
+  <div class="banner-text">Manage Applications</div>
 </div>
 
-<!-- Main -->
-<main class="job-manage-main">
 
- <!-- Search Function Left -->
-  <div class="manage-page-container">
-  <div class="manage-search-section">
-    <h2>Search EOIs</h2>
-    <form action="manage.php" method="get">
-      <label for="search_job_ref">Job Reference Number:</label>
-      <input type="text" id="search_job_ref" name="search_job_ref"><br><br>
+<div class="manage-page-container">
 
-       <label for="search_first_name">First Name:</label>
-  <input type="text" id="search_first_name" name="search_first_name"><br><br>
+<!-- Search -->
+ <div class="manage-search-section">
+  <h2>Search / Sort</h2>
+  <form method="post" action="manage.php">
+    <label for="job_ref">Job Reference</label>
+    <input type="text" id="job_ref" name="job_ref">
 
-  <label for="search_last_name">Last Name:</label>
-  <input type="text" id="search_last_name" name="search_last_name"><br><br>
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="first_name">
 
-      <input type="submit" value="Search EOIs">
-    </form>
-    <form method="post" action="manage.php">
-  <button type="submit" name="list_all" class="manage-btn">List All EOIs</button>
-    </form>
-  </div>
+    <label for="last_name">Last Name</label>
+    <input type="text" id="last_name" name="last_name">
 
-  
-<!-- Updates Delete Function Right -->
-  <div class="manage-modify-section">
-    <h2>Update / Delete EOIs</h2>
+    <label for="sort_field">Sort By</label>
+    <select name="sort_field" id="sort_field">
+      <option value="EOInumber">EOI Number</option>
+      <option value="first_name">First Name</option>
+      <option value="last_name">Last Name</option>
+      <option value="status">Status</option>
+      <option value="application_date">Application Date</option>
+    </select>
 
-    <!-- Updates Form -->
-    <form action="manage.php" method="post">
-      <label for="update_eoi_number">EOInumber:</label>
-      <input type="text" id="update_eoi_number" name="update_eoi_number"><br><br>
-
-      <label for="new_status">New Status:</label>
-      <select id="new_status" name="new_status">
-        <option value="New">New</option>
-        <option value="Current">Current</option>
-        <option value="Final">Final</option>  
-      </select><br><br>
-      <input type="submit" name="update_status" value="Update Status">
-    </form>
-    <br>
-
-    <!-- Delete Form -->
-    <form action="manage.php" method="post">
-      <label for="delete_job_ref">Delete by Job Reference:</label>
-      <input type="text" id="delete_job_ref" name="delete_job_ref"><br><br>
-      <input type="submit" name="delete_by_job_ref" value="Delete EOIs">
-    </form>
-  </div>
+    <hr>
+    <input type="submit" name="action" value="List All">
+    <input type="submit" name="action" value="Search">
+    <input type="submit" name="action" value="Sort">
+  </form>
 </div>
 
-<!-- Results Table -->
-<div class='eoi-table-wrapper'>
- <?php
-require_once("settings.php");
-$conn = mysqli_connect($host, $user, $pwd, $sql_db);
-if (!$conn) die("Connection error.");
+<!-- Modify -->
+<div class="manage-modify-section">
+  <h2>Update / Delete</h2>
+  <form method="post" action="manage.php">
+    <label for="eoi_number">EOI Number</label>
+    <input type="text" id="eoi_number" name="eoi_number">
 
-if (isset($_POST['list_all'])) {
-    $query = "SELECT * FROM eoi";
-    $result = mysqli_query($conn, $query);
+    <label for="new_status">New Status</label>
+    <select name="new_status" id="new_status">
+      <option value="New">New</option>
+      <option value="Current">Current</option>
+      <option value="Final">Final</option>
+    </select>
 
-    if ($result && mysqli_num_rows($result) > 0) {
-        echo "<h2>All EOIs</h2>";
-        echo "<table class='eoi-table'>";
-        echo "<tr>
-                <th>EOI Number</th>
-                <th>Name</th>
-                <th>Job Ref</th>
-                <th>DOB</th>
-                <th>Gender</th>
-                <th>Address</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Skills</th>
-                <th>Other Skills</th>
-                <th>Status</th>
-                <th>Applied On</th>
-              </tr>";
+    <input type="submit" name="action" value="Update Status">
+    <br><br>
+
+    <label for="delete_job_ref">Delete EOI by Job Reference</label>
+    <input type="text" id="delete_job_ref" name="delete_job_ref">
+    <input type="submit" name="action" value="Delete EOIs by Job"
+      onclick="return confirm('Are you sure you want to delete the EOI for this job reference?');">
+  </form>
+</div>
+
+</div>
+
+<!-- Processing Logic -->
+<div class="eoi-table-wrapper">
+<?php
+function displayEOITable($result) {
+    if (mysqli_num_rows($result) > 0) {
+        echo '<table class="eoi-table">';
+        echo '<tr class="eoi-heading">';
+        $fields = mysqli_fetch_fields($result);
+        foreach ($fields as $field) {
+            echo "<th>{$field->name}</th>";
+        }
+        echo '</tr>';
+
         while ($row = mysqli_fetch_assoc($result)) {
-            echo "<tr>
-                    <td>{$row['EOInumber']}</td>
-                    <td>{$row['first_name']} {$row['last_name']}</td>
-                    <td>{$row['job_ref']}</td>
-                    <td>{$row['dob']}</td>
-                    <td>{$row['gender']}</td>
-                    <td>{$row['street_address']}, {$row['suburb']}, {$row['state']} {$row['postcode']}</td>
-                    <td>{$row['email']}</td>
-                    <td>{$row['phone']}</td>
-                    <td>{$row['skills']}</td>
-                    <td>{$row['other_skills']}</td>
-                    <td>{$row['status']}</td>
-                    <td>{$row['application_date']}</td>
-                  </tr>";
+            echo "<tr>";
+            foreach ($row as $value) {
+                echo "<td>" . htmlentities($value) . "</td>";
+            }
+            echo "</tr>";
         }
         echo "</table>";
     } else {
-        echo "<p>No EOIs found.</p>";
+        echo "<div class='center-message'><p class='alert-msg'>⚠️ Please enter at least one search field</p></div>";
     }
 }
-mysqli_close($conn);
+
+function displayAllEOIs($conn) {
+    $query = "SELECT * FROM eoi";
+    $result = mysqli_query($conn, $query);
+    displayEOITable($result);
+}
+
+function searchEOIs($conn, $job_ref, $first_name, $last_name) {
+    $conditions = [];
+    $params = [];
+    $types = "";
+
+    if (!empty($job_ref)) {
+        $conditions[] = "job_ref = ?";
+        $params[] = $job_ref;
+        $types .= "s";
+    }
+    if (!empty($first_name)) {
+        $conditions[] = "first_name LIKE ?";
+        $params[] = "%" . $first_name . "%";
+        $types .= "s";
+    }
+    if (!empty($last_name)) {
+        $conditions[] = "last_name LIKE ?";
+        $params[] = "%" . $last_name . "%";
+        $types .= "s";
+    }
+    if (empty($conditions)) {
+        echo "<div class='center-message'><p class='alert-msg'>⚠️ Please enter at least one search field</p></div>";
+        return;
+    }
+
+    $where = implode(" AND ", $conditions);
+    $query = "SELECT * FROM eoi WHERE $where";
+    $stmt = mysqli_prepare($conn, $query);
+    mysqli_stmt_bind_param($stmt, $types, ...$params);
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
+    displayEOITable($result);
+}
+
+function displaySortedEOIs($conn, $field) {
+    $allowed = ["EOInumber", "first_name", "last_name", "status", "application_date"];
+    if (!in_array($field, $allowed)) {
+        echo "<div class='center-message'><p class='alert-msg'>⚠️Invalid sort field</p></div>";
+        return;
+    }
+    $query = "SELECT * FROM eoi ORDER BY $field";
+    $result = mysqli_query($conn, $query);
+    displayEOITable($result);
+}
+
+function updateEOIStatus($conn, $eoi_number, $new_status) {
+    $query = "UPDATE eoi SET status = ? WHERE EOInumber = ?";
+    $stmt = mysqli_prepare($conn, $query);
+    mysqli_stmt_bind_param($stmt, "si", $new_status, $eoi_number);
+    if (mysqli_stmt_execute($stmt)) {
+        echo "<div class='center-message'><p class='alert-msg'>✅Status updated successfully</p></div>";
+    } else {
+        echo "<div class='center-message'><p class='alert-msg'>⚠️Update failed</p></div>";
+    }
+}
+
+function deleteEOIsByJob($conn, $job_ref) {
+    $query = "DELETE FROM eoi WHERE job_ref = ?";
+    $stmt = mysqli_prepare($conn, $query);
+    mysqli_stmt_bind_param($stmt, "s", $job_ref);
+    if (mysqli_stmt_execute($stmt)) {
+        $affected = mysqli_stmt_affected_rows($stmt);
+        if ($affected > 0) {
+            echo "<div class='center-message'><p class='alert-msg'>✅ Successfully deleted $affected EOI(s) for job ref <strong>$job_ref</strong></p></div>";
+        } else {
+            echo "<div class='center-message'><p class='alert-msg'>⚠️ No EOI found for job ref <strong>$job_ref</strong></p></div>";
+        }
+    }
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action'])) {
+    $action = $_POST['action'];
+    switch ($action) {
+        case "List All":
+            displayAllEOIs($conn);
+            break;
+        case "Search":
+            searchEOIs($conn, $_POST['job_ref'], $_POST['first_name'], $_POST['last_name']);
+            break;
+        case "Sort":
+            displaySortedEOIs($conn, $_POST['sort_field']);
+            break;
+        case "Update Status":
+            updateEOIStatus($conn, $_POST['eoi_number'], $_POST['new_status']);
+            break;
+        case "Delete EOIs by Job":
+            deleteEOIsByJob($conn, $_POST['delete_job_ref']);
+            break;
+        default:
+            echo "<div class='center-message'><p class='alert-msg'>⚠️Unknown action</p></div>";
+    }
+}
 ?>
 </div>
-</main>
 
-<!-- Footer -->
 <?php include("footer.inc"); ?>

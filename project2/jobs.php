@@ -25,15 +25,16 @@
 <!-- Job Description -->
 <?php
 require_once("settings.php");
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
+mysqli_report(MYSQLI_REPORT_OFF);
 
-
-$conn = new mysqli($host, $user, $pwd, $sql_db);
+$conn = @new mysqli($host, $user, $pwd, $sql_db);
 if ($conn->connect_error) {
-  die("<p>Database connection failed: " . $conn->connect_error . "</p>");
+  echo "<div class='center-message'>
+          <p class='alert-msg'>⚠️ Unable to connect to server. Please try again later.</p>
+        </div>";
+  include("footer.inc");
+  exit();
 }
 
 $conn->set_charset("utf8mb4");
