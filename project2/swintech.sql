@@ -16,9 +16,9 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
---
--- Table structure for table `eoi`
---
+/*--*/;
+/*-- Table structure for table `eoi`*/;
+/*--*/;
 
 DROP TABLE IF EXISTS `eoi`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -36,7 +36,12 @@ CREATE TABLE `eoi` (
   `postcode` varchar(4) NOT NULL,
   `email` varchar(100) NOT NULL,
   `phone` varchar(15) NOT NULL,
-  `skills` varchar(100) DEFAULT NULL,
+  `position_justification` text DEFAULT NULL,
+  `related_work` text DEFAULT NULL,
+  `skill1` BOOLEAN DEFAULT FALSE,               -- e.g. HTML
+  `skill2` BOOLEAN DEFAULT FALSE,               -- e.g. CSS
+  `skill3` BOOLEAN DEFAULT FALSE,               -- e.g. JavaScript
+  `skill4` BOOLEAN DEFAULT FALSE,
   `other_skills` text DEFAULT NULL,
   `status` enum('New','Current','Final') DEFAULT 'New',
   `application_date` date DEFAULT curdate(),
@@ -44,19 +49,19 @@ CREATE TABLE `eoi` (
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `eoi`
---
+/*--*/;
+/*-- Dumping data for table `eoi`*/;
+/*--*/;
 
 LOCK TABLES `eoi` WRITE;
 /*!40000 ALTER TABLE `eoi` DISABLE KEYS */;
-INSERT INTO `eoi` VALUES (1,'DEV001','Alice','Nguyen','1995-04-22','Female','12 Main St','Melbourne','VIC','3000','alice.nguyen@example.com','0412000001',NULL,'Knows Bootstrap','New','2025-05-14'),(2,'IT002','Jason','Chen','1990-12-01','Male','55 York Ave','Sydney','NSW','2000','jason.chen@example.com','0422000002',NULL,'Familiar with helpdesk tools','Current','2025-05-14'),(3,'DEV001','Mia','Patel','2000-07-15','Female','77 King St','Brisbane','QLD','4000','mia.patel@example.com','0433000003',NULL,'','New','2025-05-14'),(4,'DEV003','Ethan','Lee','1998-11-09','Male','5 Ocean Rd','Perth','WA','6000','ethan.lee@example.com','0444000004',NULL,'Worked on SQL reports','Final','2025-05-14'),(5,'IT004','Sophia','Zhao','1993-05-28','Female','9 Elm Street','Adelaide','SA','5000','sophia.zhao@example.com','0455000005',NULL,'','New','2025-05-14'),(6,'DEV001','Tom','Williams','1988-01-10','Male','321 Creek Rd','Hobart','TAS','7000','tom.williams@example.com','0466000006',NULL,'Basic Python skills','Current','2025-05-14'),(7,'DEV002','Lily','Tran','1997-08-19','Other','89 George St','Canberra','ACT','2601','lily.tran@example.com','0477000007',NULL,'Can work remotely','New','2025-05-14');
+INSERT INTO `eoi` VALUES (1,'DEV001','Alice','Nguyen','1995-04-22','Female','12 Main St','Melbourne','VIC','3000','alice.nguyen@example.com','0412000001', 'I am highly motivated and eager to contribute.', 'I worked as a customer service assistant for two years.', TRUE, FALSE, FALSE, TRUE, 'Knows Bootstrap','New','2025-05-14'),(2,'IT002','Jason','Chen','1990-12-01','Male','55 York Ave','Sydney','NSW','2000','jason.chen@example.com','0422000002', 'I bring a positive attitude to every task.', 'I managed inventory in a retail store.', TRUE, FALSE, FALSE, TRUE, 'Familiar with helpdesk tools','Current','2025-05-14'),(3,'DEV001','Mia','Patel','2000-07-15','Female','77 King St','Brisbane','QLD','4000','mia.patel@example.com','0433000003', 'I bring a positive attitude to every task.', 'I helped coordinate events at a local community center.', TRUE, FALSE, FALSE, TRUE, 'asdasd','New','2025-05-14'),(4,'DEV003','Ethan','Lee','1998-11-09','Male','5 Ocean Rd','Perth','WA','6000','ethan.lee@example.com','0444000004', 'I learn quickly and adapt to new systems.', 'I did data entry and filing at an office job.', TRUE, FALSE, FALSE, TRUE, 'Worked on SQL reports','Final','2025-05-14'),(5,'IT004','Sophia','Zhao','1993-05-28','Female','9 Elm Street','Adelaide','SA','5000','sophia.zhao@example.com','0455000005', 'I have strong communication and teamwork skills.', 'I volunteered as a tutor for high school students.', TRUE, FALSE, FALSE, TRUE, '','New','2025-05-14'),(6,'DEV001','Tom','Williams','1988-01-10','Male','321 Creek Rd','Hobart','TAS','7000','tom.williams@example.com','0466000006', 'I take initiative and solve problems effectively.', 'I assisted with social media for a small business.', TRUE, FALSE, FALSE, TRUE, 'Basic Python skills','Current','2025-05-14'),(7,'DEV002','Lily','Tran','1997-08-19','Other','89 George St','Canberra','ACT','2601','lily.tran@example.com','0477000007', 'I am passionate about the role and your company.', 'I completed an internship in an administrative role.', TRUE, FALSE, FALSE, TRUE, 'Can work remotely','New','2025-05-14');
 /*!40000 ALTER TABLE `eoi` ENABLE KEYS */;
 UNLOCK TABLES;
 
---
--- Table structure for table `jobs`
---
+/*--*/;
+/*-- Table structure for table `jobs`*/;
+/*--*/;
 
 DROP TABLE IF EXISTS `jobs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -78,9 +83,9 @@ CREATE TABLE `jobs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `jobs`
---
+/*--*/;
+/*-- Dumping data for table `jobs`*/;
+/*--*/;
 
 LOCK TABLES `jobs` WRITE;
 /*!40000 ALTER TABLE `jobs` DISABLE KEYS */;

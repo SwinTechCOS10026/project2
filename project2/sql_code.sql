@@ -48,6 +48,12 @@ CREATE TABLE IF NOT EXISTS eoi (
     email VARCHAR(100) NOT NULL,                -- Email address
     phone VARCHAR(12) NOT NULL,                 -- Phone number (accepts 10-12 digits)
 
+    -- Related past experience
+    position_justification TEXT, 
+
+    -- Related past experience
+    related_exp TEXT, 
+
     -- Skills checkboxes (TRUE or FALSE for each skill)
     skill1 BOOLEAN DEFAULT FALSE,               -- e.g. HTML
     skill2 BOOLEAN DEFAULT FALSE,               -- e.g. CSS
@@ -66,8 +72,8 @@ CREATE TABLE IF NOT EXISTS eoi (
 -- Add dummy EOI submissions to test with (TEST)
 INSERT INTO eoi (job_ref, first_name, last_name, street_address, suburb, state, postcode, email, phone, skill1, skill2, skill3, skill4, other_skills)
 VALUES
-('DEV001', 'Alice', 'Smith', '12 Test St', 'Melbourne', 'VIC', '3000', 'alice@example.com', '0412345678', TRUE, TRUE, FALSE, FALSE, 'Basic React experience'),
-('IT002', 'Bob', 'Jones', '45 King St', 'Sydney', 'NSW', '2000', 'bob@example.com', '0498765432', TRUE, FALSE, TRUE, TRUE, 'Knows Office 365');
+('DEV001', 'Alice', 'Smith', '12 Test St', 'Melbourne', 'VIC', '3000', 'alice@example.com', '0412345678', "I have been awarded the best frontend developer in the state", "I've worked for Microsoft", TRUE, TRUE, FALSE, FALSE, 'Basic React experience'),
+('IT002', 'Bob', 'Jones', '45 King St', 'Sydney', 'NSW', '2000', 'bob@example.com', '0498765432', "I believe in a good workplace environment and believe I'm a good fit for this team", "I've worked for Microsoft and Apple", TRUE, FALSE, TRUE, TRUE, 'Knows Office 365');
 
 
 -- Run this file in phpMyAdmin or via mysql CLI:

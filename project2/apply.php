@@ -7,7 +7,7 @@
 </div>
     <div class="apply-wrapper">
         <h2 class="apply-title">Job Application Form</h2>
-        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" class="apply-form">
+        <form action="process_eoi.php" method="post" class="apply-form">
             <div class="apply-form-section">
                 <fieldset class="apply-fieldset">
                     <legend class="apply-legend">Personal Details</legend>
@@ -33,15 +33,15 @@
                     </div>
                     <div class="form-row">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="" required>
+                        <input type="email" id="email" name="email" placeholder="" required >
                     </div>
                       <div class="form-row">
                         <label for="gender">Gender</label>
-                            <select name="gender" id="gender" required>
+                            <select name="gender" id="gender" required >
                             <option value="" disabled selected>Select your gender</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="other">Other</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
                             </select>
                     </div>
                 </fieldset>
@@ -63,14 +63,14 @@
                             <label for="state">State:</label>
                            <select name="state" id="state" required>
                             <option value="" disabled selected>Select State</option>
-                            <option value="vic">VIC</option>
-                            <option value="tas">TAS</option>
-                            <option value="wa">WA</option>
-                            <option value="sa">SA</option>
-                            <option value="qld">QLD</option>
-                            <option value="nsw">NSW</option>
-                            <option value="act">ACT</option>
-                            <option value="nt">NT</option>
+                            <option value="VIC">VIC</option>
+                            <option value="TAS">TAS</option>
+                            <option value="WA">WA</option>
+                            <option value="SA">SA</option>
+                            <option value="QLD">QLD</option>
+                            <option value="NSW">NSW</option>
+                            <option value="ACT">ACT</option>
+                            <option value="NT">NT</option>
                             </select>
                     </div>
                     
@@ -85,7 +85,7 @@
                     </div>
 
                     <div class="form-row">
-                        <label for="address">Home Address:</label>
+                        <label for="address">Suburb:</label>
                         <input type="text" id="address" name="address" pattern=".{5,100}" placeholder=""  required>
                     </div>
                 </fieldset>
@@ -101,13 +101,11 @@
 
                 <div class="form-row checkbox-row">
                     <label>Do you have previous experience in this line of work?</label>
-                      <label>
-                        <input type="checkbox" name="prevex-yes"> Yes
-                      </label>
+                    <input type="checkbox" id="prevex-yes" name="prevex-yes" value="Yes">
+                    <label for="prevex-yes">Yes</label>
                       
-                      <label>
-                        <input type="checkbox" name="prevex-no"> No
-                      </label>
+                    <input type="checkbox" id="prevex-no" name="prevex-no" value="No">
+                    <label for="prevex-no">No</label>
                 </div>
 
                 <div class="form-row">
@@ -119,9 +117,22 @@
                     <fieldset>
                         <legend>Required Technical List: </legend>
                         <input type="checkbox" id="swin" name="techlist" value="swin">
-                        <label for="swin">Attending Swinburne?</label><br>
+                        <label for="swin">Be attending Swinburne</label><br>
                         <input type="checkbox" id="php" name="techlist" value="php">
-                        <label for="php">Know how to use php</label><br>
+                        <label for="php">Know how to use PHP</label><br>
+                    </fieldset>
+                </div>
+                <div class="form-row">
+                    <fieldset>
+                        <legend>Skill Proficiencies: </legend>
+                        <input type="checkbox" id="skills" name="skills1" value=TRUE>
+                        <label for="skills1">HTML</label><br>
+                        <input type="checkbox" id="skills" name="skills2" value=TRUE>
+                        <label for="skills2">CSS</label><br>
+                        <input type="checkbox" id="skills" name="skills3" value="TRUE">
+                        <label for="skills3">JavaScript</label><br>
+                        <input type="checkbox" id="skills" name="skills4" value="TRUE">
+                        <label for="skills4">SQL</label><br>
                     </fieldset>
                 </div>
                 <div class="form-row">
