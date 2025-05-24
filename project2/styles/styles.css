@@ -257,7 +257,7 @@ body {
   color: #2a1903;
   font-weight: bold;
   margin-top: 50px;
-  margin-left: 20px;
+  margin-left: 40px;
   max-width: 600px;
 }
 #opening-text {
@@ -286,8 +286,9 @@ body {
     color: #4b4b4b;
     animation-name: text-lighting;
     animation-iteration-count: 1;
-  animation-timing-function: linear forwards;
+    animation-timing-function: linear forwards;
     animation-duration: 1500ms;
+
 }
 @keyframes text-lighting{
     0%,85%{
