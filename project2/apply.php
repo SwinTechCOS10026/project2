@@ -124,16 +124,20 @@
                 </div>
                 <div class="form-row">
                     <fieldset>
-                        <legend>Skill Proficiencies: </legend>
-                        <input type="checkbox" id="skills" name="skills1" value=TRUE>
-                        <label for="skills1">HTML</label><br>
-                        <input type="checkbox" id="skills" name="skills2" value=TRUE>
-                        <label for="skills2">CSS</label><br>
-                        <input type="checkbox" id="skills" name="skills3" value="TRUE">
-                        <label for="skills3">JavaScript</label><br>
-                        <input type="checkbox" id="skills" name="skills4" value="TRUE">
-                        <label for="skills4">SQL</label><br>
-                    </fieldset>
+                    <legend>Skill Proficiencies:</legend>
+
+                    <input type="checkbox" id="skills1" name="skills1" value="TRUE">
+                    <label for="skills1">HTML</label><br>
+
+                    <input type="checkbox" id="skills2" name="skills2" value="TRUE">
+                    <label for="skills2">CSS</label><br>
+
+                    <input type="checkbox" id="skills3" name="skills3" value="TRUE">
+                    <label for="skills3">JavaScript</label><br>
+
+                    <input type="checkbox" id="skills4" name="skills4" value="TRUE">
+                    <label for="skills4">SQL</label><br>
+                </fieldset>
                 </div>
                 <div class="form-row">
                     <label for="relskills">Other Relevent Skills:</label>

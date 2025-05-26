@@ -1774,14 +1774,6 @@ input:focus {
   margin: 1%; 
   padding: auto;
 }
-#enhancement-item5 {
-  width: 50%;
-  height: 70%;  
-  border:1px solid #999; 
-  text-align:center; 
-  margin: 1%; 
-  padding: auto;
-}
 
 #enhancement-img1 {
   width: 70%; 
@@ -1799,11 +1791,6 @@ input:focus {
 }
 
 #enhancement-img4 {
-  width: 70%; 
-  height: 70%;   
-}
-
-#enhancement-img5 {
   width: 70%; 
   height: 70%;   
 }

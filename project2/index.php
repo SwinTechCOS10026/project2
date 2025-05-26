@@ -6,7 +6,7 @@
 <main id="index-main">
   <div id="opening-fieldset-background">
     <h2 id="opening-heading">
-      <div class="heading-animation">
+      <span class="heading-animation">
         <span>S</span>
         <span>w</span>
         <span>i</span>
@@ -15,7 +15,7 @@
         <span>e</span>
         <span>c</span>
         <span>h</span>
-      </div>
+      </span>
     </h2>
     <br>
     <!-- <h3 id="opening-text">
