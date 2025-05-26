@@ -1744,8 +1744,7 @@ input:focus {
   border:1px solid #999; 
   text-align:center; 
   margin: 1%;
-  justify-content:space-around; 
-  padding: auto;
+  justify-content:space-around;
 }
 
 #enhancement-item2 {
@@ -1754,7 +1753,7 @@ input:focus {
   border:1px solid #999; 
   text-align:center; 
   margin: 1%; 
-  padding: auto;
+  justify-content:space-around;
 }
 
 #enhancement-item3 {
@@ -1764,7 +1763,7 @@ input:focus {
   border:1px solid #999; 
   text-align:center; 
   margin: 1%; 
-  padding: auto;
+  justify-content:space-around;
 }
 #enhancement-item4 {
   width: 50%;
@@ -1772,7 +1771,7 @@ input:focus {
   border:1px solid #999; 
   text-align:center; 
   margin: 1%; 
-  padding: auto;
+  justify-content:space-around;
 }
 
 #enhancement-img1 {
