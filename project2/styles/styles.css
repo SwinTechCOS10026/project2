@@ -1724,3 +1724,90 @@ input:focus {
 }
 
 /* #endregion */
+
+/* #region ===============================================》 Apply Page 《===================================================== */
+
+#enhancements-heading {
+  text-align:center;
+}
+#enhancements-contents {
+  display:flex; 
+  justify-content:space-around; 
+  margin:20px;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+#enhancement-item1 {
+  width: 50%;
+  height: 70%; 
+  border:1px solid #999; 
+  text-align:center; 
+  margin: 1%;
+  justify-content:space-around; 
+  padding: auto;
+}
+
+#enhancement-item2 {
+  width: 50%;
+  height: 70%;  
+  border:1px solid #999; 
+  text-align:center; 
+  margin: 1%; 
+  padding: auto;
+}
+
+#enhancement-item3 {
+  width: 50%;
+  height: 70%; 
+  /* padding-bottom: 10%; */
+  border:1px solid #999; 
+  text-align:center; 
+  margin: 1%; 
+  padding: auto;
+}
+#enhancement-item4 {
+  width: 50%;
+  height: 70%;  
+  border:1px solid #999; 
+  text-align:center; 
+  margin: 1%; 
+  padding: auto;
+}
+#enhancement-item5 {
+  width: 50%;
+  height: 70%;  
+  border:1px solid #999; 
+  text-align:center; 
+  margin: 1%; 
+  padding: auto;
+}
+
+#enhancement-img1 {
+  width: 70%; 
+  height: 70%;  
+}
+
+#enhancement-img2 {
+  width: 70%; 
+  height: 70%;   
+}
+
+#enhancement-img3 {
+  width: 70%; 
+  height: 70%;   
+}
+
+#enhancement-img4 {
+  width: 70%; 
+  height: 70%;   
+}
+
+#enhancement-img5 {
+  width: 70%; 
+  height: 70%;   
+}
+
+
+
+/* #endregion */
